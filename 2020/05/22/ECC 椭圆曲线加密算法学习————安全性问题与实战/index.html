@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>ECC 椭圆曲线加密算法学习————安全性问题与实战 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="ECC 椭圆曲线加密算法学习————安全性问题与实战标签（空格分隔）： ecc Crypto    ****        &gt; File Name: ECC 椭圆曲线加密算法学习————安全性问题与实战        &gt; Author: shaobaobaoer        &gt; Mail: shaobaobaoer@126.com        &gt; WebSite: sh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ECC 椭圆曲线加密算法学习————安全性问题与实战">
+<meta property="og:url" content="http://yoursite.com/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%AE%89%E5%85%A8%E6%80%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%AE%9E%E6%88%98/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ECC 椭圆曲线加密算法学习————安全性问题与实战标签（空格分隔）： ecc Crypto    ****        &gt; File Name: ECC 椭圆曲线加密算法学习————安全性问题与实战        &gt; Author: shaobaobaoer        &gt; Mail: shaobaobaoer@126.com        &gt; WebSite: sh">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://static.zybuluo.com/shaobaobaoer/men4kgdq0r0k6dbe5klhbuzf/baby-step-giant-step.gif">
+<meta property="og:image" content="http://static.zybuluo.com/shaobaobaoer/stfat7z110hnm1kbloq4qhng/tortoise-hare.gif">
+<meta property="article:published_time" content="2020-05-21T19:14:44.942Z">
+<meta property="article:modified_time" content="2020-05-21T19:07:00.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://static.zybuluo.com/shaobaobaoer/men4kgdq0r0k6dbe5klhbuzf/baby-step-giant-step.gif">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,259 +157,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-ECC 椭圆曲线加密算法学习————安全性问题与实战" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%8E%E5%AE%9E%E6%95%B0%E5%9F%9F%E5%88%B0%E6%9C%89%E9%99%90%E5%9F%9F%E7%9A%84%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/">ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%8E%E5%AE%9E%E6%95%B0%E5%9F%9F%E5%88%B0%E6%9C%89%E9%99%90%E5%9F%9F%E7%9A%84%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/" class="archive-article-date">
-  	<time datetime="2020-05-21T19:14:44.943Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ECC-椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线"><a href="#ECC-椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线" class="headerlink" title="ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线"></a>ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线</h1><p>标签（空格分隔）： ecc Crypto</p>
-<hr>
-<blockquote>
-<p> *<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong><br>    &gt; File Name: ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线<br>    &gt; Author: shaobaobaoer<br>    &gt; Mail: <a href="mailto:shaobaobaoer@126.com">shaobaobaoer@126.com</a><br>    &gt; WebSite: shaobaobaoer.cn<br>    &gt; Time: Sunday, 24. March 2019 11:53AM<br> *<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
-</blockquote>
-<h2 id="0x00-前言"><a href="#0x00-前言" class="headerlink" title="0x00 前言"></a>0x00 前言</h2><p>我好像很久没有自己学点东西了，从寒假上来就一直在做期末大作业然后考试。现在算是考完了，但是也要意味着考研复习要彻底拉开帷幕了。很多想去复现的CVE只能在计划本上越排越后面。有个东西一直想去看看，就是ECC。上学期学了数论的选修课，<!--虽然上得我很难受，因为老师压根儿没有讲幂同余方程，甚至连RSA都只是提了个大概。总之就是很难受--></p>
-<h3 id="参考的网站"><a href="#参考的网站" class="headerlink" title="参考的网站"></a>参考的网站</h3><ul>
-<li><a href="https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction" target="_blank" rel="noopener">https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction</a></li>
-<li><a href="https://andrea.corbellini.name/2015/05/23/elliptic-curve-cryptography-finite-fields-and-discrete-logarithms/" target="_blank" rel="noopener">https://andrea.corbellini.name/2015/05/23/elliptic-curve-cryptography-finite-fields-and-discrete-logarithms/</a></li>
-</ul>
-<h3 id="相关代码"><a href="#相关代码" class="headerlink" title="相关代码"></a>相关代码</h3><ul>
-<li>本文的完整代码<ul>
-<li><a href="https://github.com/ninthDevilHAUNSTER/ecc_learning" target="_blank" rel="noopener">https://github.com/ninthDevilHAUNSTER/ecc_learning</a></li>
-</ul>
-</li>
-<li>Schoof 算法Python版本<ul>
-<li><a href="https://github.com/pdinges/python-schoof" target="_blank" rel="noopener">https://github.com/pdinges/python-schoof</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="预先准备的数学概念"><a href="#预先准备的数学概念" class="headerlink" title="预先准备的数学概念"></a>预先准备的数学概念</h3><h4 id="群-Group"><a href="#群-Group" class="headerlink" title="群 Group"></a>群 Group</h4><p>这个概念来自于离散数学，有所困惑还请多翻翻书。对于一个阿贝尔群（有些书上管它叫交换群或者加群，相信学过离散数学的你对它一定记忆犹新）它的性质包括</p>
-<ul>
-<li>具有封闭性</li>
-<li>满足结合律</li>
-<li>存在单位元</li>
-<li>每个数存在逆元（备注，知乎上的翻译翻错了）</li>
-<li>满足交换律</li>
-</ul>
-<h4 id="整数域和有限域"><a href="#整数域和有限域" class="headerlink" title="整数域和有限域"></a>整数域和有限域</h4><p>首先，有限域是一个带有有限元素的集合。比如，有一个有限域是整数模p的集合（integers mod p,p是素数），可表示为 $\mathbb {Z}/p,GF(p)$  或 $\mathbb {F}_{p}$ ,一般用后者。</p>
-<h4 id="模运算-mod"><a href="#模运算-mod" class="headerlink" title="模运算 mod"></a>模运算 mod</h4><p>这个概念来自于数论，有所困惑的还请找潘兄弟俩的书看看。<!--（虽然我也有很多没有看懂）--><br>需要用到的知识在下面罗列</p>
-<ul>
-<li>模运算的加法</li>
-<li>模运算的乘法</li>
-<li>乘法逆元，简称逆元<ul>
-<li>$ 45 \times x \equiv 1 (mod ;23) $</li>
-<li>得出 $ x = -1 $所以，-1是45对模23的逆元</li>
-<li>关于乘法逆元可以用辗转欧几里得算法来快速求出。代码在<code>misc/shaobaobaoer_math_lab.py</code>下。</li>
-</ul>
-</li>
-</ul>
-<h4 id="形如-y-2-equiv-A-mod-p-的同余方程求解问题"><a href="#形如-y-2-equiv-A-mod-p-的同余方程求解问题" class="headerlink" title="形如$ y^2 ;\equiv ;A;(;mod;p;)$的同余方程求解问题"></a>形如$ y^2 ;\equiv ;A;(;mod;p;)$的同余方程求解问题</h4><blockquote>
-<p>参考网站<br><a href="https://www.johndcook.com/blog/quadratic_congruences/?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">https://www.johndcook.com/blog/quadratic_congruences/?tdsourcetag=s_pctim_aiomsg</a><br><a href="https://blog.csdn.net/ACdreamers/article/details/10182281" target="_blank" rel="noopener">https://blog.csdn.net/ACdreamers/article/details/10182281</a><br>C代码模板：<br><a href="https://blog.csdn.net/Quack_quack/article/details/50189111" target="_blank" rel="noopener">https://blog.csdn.net/Quack_quack/article/details/50189111</a></p>
-</blockquote>
-<p>其中p是一个奇素数。其中需要用到一些二次剩余得知识证明。在两篇文章中都有说，这里就记录一些结论。<!--详细的证明在附录中--></p>
-<p><strong>确定方程是否有解？</strong></p>
-<p>方程有解当且仅当 $A^{\frac{p-1}{2}}\equiv 1 (mod p)$</p>
-<p><strong>确定方程的解</strong></p>
-<p>如何计算方程的解呢？<br>网上搜下来都是ACM的题目了。顿时感觉自己血菜。在ACMer的博客里看到了 cipolla算法。代码量用python写起来不是很复杂，但是这个东西暂时还看不懂，魔改了一下 cipolla 的模板。之后也许会填坑</p>
-<h4 id="三次一元方程解的形式"><a href="#三次一元方程解的形式" class="headerlink" title="三次一元方程解的形式"></a>三次一元方程解的形式</h4><p>对于如下形式的方程<br>$$ ax^3 + bx^2 + cx + d = 0$$<br>存在如下结论<br>$x1+x2+x3=-b/a$<br>$x1<em>x2+x2</em>x3+x3<em>x1=c/a$<br>$x1</em>x2*x3=-d/a$</p>
-<p>现在，方程变为如下形式<br>$$ (kx + c)^2 = x^3 + ax +b ;;; \Longleftrightarrow ;;;x^3 - k^2x^2 + (a-2kc)x + b - c^2 = 0$$</p>
-<p>可以得到如下结论，该结论可以节省很多解方程的时间</p>
-<p>$$x3= k^2 - x1 - x2$$</p>
-<!--#### 形如 $ Ax^3 + Bx^2 + Cx + D \equiv 0 (mod\; p)$的同余方程求解问题-->
-<!--在计算椭圆曲线与直线交点的时候，必然会遇到这样的问题。不知求直线$kx + b -y \equiv 0 <!--(mod\;p)$和有限域$\mathbb {F}_{p}$椭圆曲线交点的问题是否有更优质的解法。-->
-
-<!--如何去求解这一类的方程并写一个程序呢。手算自然是会一些，但是写程序的话实在是太复杂了。后来自己在实现的时候直接用爆破的方法了，但是随着p越来越大，这种方法自然是欠考虑的。为此，在`misc/FoolSolution.py`里写了一个`fool_solve`的函数来爆破求解这个问题。-->
-
-<!--总之，这个问题这颇让我头大，希望数论非常优秀的师傅能够给予我一个解答。-->
-
-
-<h2 id="0x01-椭圆曲线定义"><a href="#0x01-椭圆曲线定义" class="headerlink" title="0x01 椭圆曲线定义"></a>0x01 椭圆曲线定义</h2><p>首先来看下椭圆曲线的标准形式公式：</p>
-<p>$$y^2 = x^3 + ax +b$$</p>
-<p>其中 $4a^3 + 27b^2 \ne 0 $ 这个限定条件保证曲线不包含<strong>奇点</strong>。<br>这样的椭圆曲线被称为 Weierstrass 标准形式。</p>
-<p>当然，为了定义椭圆曲线，还需要一个无穷远的点作为曲线的一部分，在这里用符号 $\odot$ 表示。</p>
-<p>最终，将表达式可以精炼为<br>$$\left{ (x, y) \in \mathbb{R}^2\ |\ y^2 = x^3 + ax + b,\ 4 a^3 + 27 b^2 \ne 0 \right}\ \cup\ \left{ \odot \right}$$</p>
-<p>根据解析式，不难发现该曲线关于x轴对称，之后会用到其性质</p>
-<h3 id="1-1-标准形式的椭圆曲线绘制"><a href="#1-1-标准形式的椭圆曲线绘制" class="headerlink" title="1.1 标准形式的椭圆曲线绘制"></a>1.1 标准形式的椭圆曲线绘制</h3><p>执行如下代码可以画出来一个椭圆曲线。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># draw_curve/draw.py</span></span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = <span class="number">-2</span></span><br><span class="line">b = <span class="number">3</span></span><br><span class="line">y, x = np.ogrid[<span class="number">-5</span>:<span class="number">5</span>:<span class="number">100j</span>, <span class="number">-5</span>:<span class="number">5</span>:<span class="number">100j</span>]</span><br><span class="line">plt.contour(x.ravel(), y.ravel(), pow(y, <span class="number">2</span>) - pow(x, <span class="number">3</span>) - x * a - b, [<span class="number">0</span>])</span><br><span class="line">plt.grid()</span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<p><img src="http://static.zybuluo.com/shaobaobaoer/ipfefuzlwnscuxvz0o2aybfv/image_1d6kcqrgb13j7sbbqsl5pq1t449.png" alt="image_1d6kcqrgb13j7sbbqsl5pq1t449.png-24kB"></p>
-<h3 id="1-2-椭圆曲线上的群G"><a href="#1-2-椭圆曲线上的群G" class="headerlink" title="1.2 椭圆曲线上的群G"></a>1.2 椭圆曲线上的群G</h3><p>之后，有了这个可爱的曲线之后，我们定义一个群G</p>
-<ul>
-<li>群众元素满足上头的表达式，也就是说，群中元素是椭圆曲线上的点</li>
-<li>单位元$e$是无穷远处的点$\odot$<!--TODO 证明【证明在附录2中】--></li>
-<li>逆元$p$是原坐标点关于x轴对称的那一点。</li>
-<li>定义一种在该群上的加法，取一条与曲线相交于三点的直线，记交点为$P,Q,R$，他们的总和等于0，就是说$P+Q+R=0$。这三点没有顺序，所以可以证明该椭圆曲线满足交换律。</li>
-</ul>
-<p>之后，可以证明这个群是一个典型的阿贝尔群。</p>
-<h3 id="1-3-群G上加法运算的各种情况"><a href="#1-3-群G上加法运算的各种情况" class="headerlink" title="1.3 群G上加法运算的各种情况"></a>1.3 群G上加法运算的各种情况</h3><p>为了方便表示，可以把该加法写成$P+Q=-R$<br>这样写，其中的-R有几何含义，也就是R关于X轴对称的一点，如图</p>
-<p><img src="http://static.zybuluo.com/shaobaobaoer/tq4r54561st2eyftbd9zr6g5/image_1d6ke29sgttoe4f1jmf1j7e18cnm.png" alt="image_1d6ke29sgttoe4f1jmf1j7e18cnm.png-60.9kB"></p>
-<p>之后，讨论三种情况。</p>
-<h4 id="CASE-1-P-Q"><a href="#CASE-1-P-Q" class="headerlink" title="CASE 1 P = Q :"></a>CASE 1 P = Q :</h4><p>$k = \cfrac{3x^2_0 + a }{2y_0}$</p>
-<p>得知直线方程后，计算$R_x= k^2 - x1 - x2$</p>
-<h4 id="CASE-2-P-Q-并且-P-Q-R"><a href="#CASE-2-P-Q-并且-P-Q-R" class="headerlink" title="CASE 2 P != Q 并且 P + Q = -R:"></a>CASE 2 P != Q 并且 P + Q = -R:</h4><p>$k = \cfrac{y_P - y_Q}{ x_P - x_Q}$</p>
-<p>得知直线方程后，计算$R_x= k^2 - x1 - x2$</p>
-<h4 id="CASE-3-P-Q-并且-P-Q-P-OR-P-Q-Q"><a href="#CASE-3-P-Q-并且-P-Q-P-OR-P-Q-Q" class="headerlink" title="CASE 3 P != Q 并且 P + Q = -P OR P + Q = -Q:"></a>CASE 3 P != Q 并且 P + Q = -P OR P + Q = -Q:</h4><p>这就是之前说到的第三种情况，在这种情况下，只需要计算</p>
-<p>$ \cfrac{3x^2_0 + a }{2y_0} - \cfrac{y_P - y_Q}{ x_P - x_Q}  $是否等于零</p>
-<p>这种情况下，$P,Q$必有一点满足上式。将该点坐标的纵坐标求反即得到 -R。实际运算的时候可以和CASE2合并。</p>
-<p>之后，就可以写一个函数来计算-R的值了，在此就罗列一些关键代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_three_pionts</span><span class="params">(self, P, Q)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> P == (<span class="number">0</span>, <span class="number">0</span>) <span class="keyword">or</span> Q == (<span class="number">0</span>, <span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> Q <span class="keyword">if</span> P == (<span class="number">0</span>, <span class="number">0</span>) <span class="keyword">else</span> P</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> self.__check_on_curve(P) <span class="keyword">and</span> self.__check_on_curve(Q):</span><br><span class="line">        <span class="keyword">if</span> P == Q:</span><br><span class="line">            <span class="comment"># CASE 1</span></span><br><span class="line">            k = (<span class="number">3</span> * P[<span class="number">0</span>] ** <span class="number">2</span> + self.a) / (<span class="number">2</span> * P[<span class="number">1</span>])</span><br><span class="line">            b = P[<span class="number">1</span>] - k * P[<span class="number">0</span>]</span><br><span class="line">            x = k ** <span class="number">2</span> - P[<span class="number">0</span>] - Q[<span class="number">0</span>]</span><br><span class="line">            y = k * x + b</span><br><span class="line">            R = (x, -y)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># CASE 2</span></span><br><span class="line">            k = (P[<span class="number">1</span>] - Q[<span class="number">1</span>]) / (P[<span class="number">0</span>] - Q[<span class="number">0</span>])</span><br><span class="line">            b = P[<span class="number">1</span>] - k * P[<span class="number">0</span>]</span><br><span class="line">            x = k ** <span class="number">2</span> - P[<span class="number">0</span>] - Q[<span class="number">0</span>]</span><br><span class="line">            y = k * x + b</span><br><span class="line">            R = (x, -y)</span><br><span class="line">        <span class="keyword">return</span> R</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">raise</span> ValueError</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-4-标量积与对数问题"><a href="#1-4-标量积与对数问题" class="headerlink" title="1.4 标量积与对数问题"></a>1.4 标量积与对数问题</h3><p> 定义一种变量积如下所示，实际上可以用快速幂来解决这个数乘问题 $$nP = \underbrace{P + P + \cdots + P}_{n\ \text{times}}$$</p>
-<!--有些杠精觉得这不就是简单的乘法么？然而想想清楚P是一个向量来着,啥那不是向量的点积么？兄弟讲清楚啊，曲线上的加法是长啥样的来着-->
-
-<p>OK，对于给定的$Q$（$Q=nP$）和$P$是否能够找到这个n呢？当然，这玩意儿不叫除，而是叫对数。（为了和其他密码中“幂”的说法保持一致，从某种程度上而言，这个也算是幂而非数乘）</p>
-<p>刚才说了，加法是有特殊的定义的。然而一个个加P又非常蠢，有什么好的方法呢？其中一个比较好的算法是倍加算法。原理很简单，可以看如下公式</p>
-<p>n = 151, 二进制表示： $10010111_2$ ，这个二进制也可以表示成幂次加和：</p>
-<p>$\begin{array}{rcl} 151 &amp; = &amp; 1 \cdot 2^7 + 0 \cdot 2^6 + 0 \cdot 2^5 + 1 \cdot 2^4 + 0 \cdot 2^3 + 1 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 \ &amp; = &amp; 2^7 + 2^4 + 2^2 + 2^1 + 2^0 \end{array}$</p>
-<p>简化一下：</p>
-<p>$151 \cdot P = 2^7 P + 2^4 P + 2^2 P + 2^1 P + 2^0 P$</p>
-<p>在之后，可以写一下小把戏来达成这个加法,bits函数其实就是一个迭代器。而每次更新P和R的值。R是最后的结果，而P则是每次自加，形如$2^n P$,n为迭代次数。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_scalar_multiplication</span><span class="params">(self, n, P)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    Returns the result of n * x, computed using</span></span><br><span class="line"><span class="string">    the double and add algorithm.</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    self.R = (<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    self.P = P</span><br><span class="line">    <span class="keyword">for</span> bit <span class="keyword">in</span> bits(n):</span><br><span class="line">        <span class="keyword">if</span> bit == <span class="number">1</span>:</span><br><span class="line">            self.R = self.get_three_pionts(self.P, self.R)</span><br><span class="line">        self.P = self.get_three_pionts(self.P, self.P)</span><br><span class="line">    <span class="keyword">return</span> self.R</span><br></pre></td></tr></table></figure>
-
-<p>在连续曲线上，这个n是非常好找的，（当然你要算很多次）但是如果在离散领域呢？就会变得更加复杂。这是椭圆曲线加密算法的核心所在。</p>
-<h2 id="0x02-有限域和离散对数领域的椭圆曲线"><a href="#0x02-有限域和离散对数领域的椭圆曲线" class="headerlink" title="0x02 有限域和离散对数领域的椭圆曲线"></a>0x02 有限域和离散对数领域的椭圆曲线</h2><blockquote>
-<p>之前说了关于标量积的相关知识，在看这节之前，还需要知道数论的相关知识</p>
-</blockquote>
-<p>之后，将椭圆曲线和有限域 $\mathbb {F}<em>{p}$结合起来，在$\mathbb {F}</em>{p}$上定义椭圆曲线，形式是点集。于是它变成了这样子，注意，在计算 $y^2 \equiv A (mod ;p)$的时候推荐用前文说到的<code>cipolla</code>算法</p>
-<p><img src="http://static.zybuluo.com/shaobaobaoer/hqo6k3g5qfzjx0iovjy1pkof/image_1d6kgl87h19krnf911311hvhej613.png" alt="image_1d6kgl87h19krnf911311hvhej613.png-8.7kB"></p>
-<p>参考一些图片如下所示：这就是画出来的图<br><em>a=-7;b=10;p=19</em><br><img src="http://static.zybuluo.com/shaobaobaoer/zrdg6dnqpoma30ejw52ojymm/discreteEC_-7_10_19_12_48AM.png" alt="discreteEC_-7_10_19_12_48AM.png-13.2kB"><br><em>a=-7;b=10;p=97</em><br><img src="http://static.zybuluo.com/shaobaobaoer/ndycvqrvj64jswepdq2ynjf6/discreteEC_-7_10_97_12_48AM.png" alt="discreteEC_-7_10_97_12_48AM.png-13.7kB"></p>
-<p> $\mathbb {F}_{p}$本身是一个阿贝尔群。不难证明对于在离散对数域内的椭圆曲线，仍然是一个阿贝尔群。【证明在最后】</p>
-<p>另外，回到之前刚刚说的奇点，所谓奇点，就是说在曲线中会算出来在(0,0)处的点。注意我们定义的单位元$\odot $ 的位置就是(0,0)。为了不让曲线上的点与单位元重合，所以要排除掉含有奇点的曲线。比如说曲线线$$y^2 \equiv x^3 (mod;29)$$，令$x=0$,$y=\pm 0$，可以发现在（0，0）处有三个点（别忘了还有一个单位元）。所以是一个无效的椭圆曲线</p>
-<h3 id="2-1-离散域上点的加法"><a href="#2-1-离散域上点的加法" class="headerlink" title="2.1 离散域上点的加法"></a>2.1 离散域上点的加法</h3><p>之前谈及过，$P + Q =-R$这玩意儿在实数域自然没有问题。在有限域之内也可以参照相同的定义<!--但是如何保证在 $\mathbb {F}_{p}$ 上共线？--></p>
-<p>对此，设$L : ax + by + c \equiv 0 (mod ; p)$为$\mathbb {F}_{p}$ 上一条线。同样可以通过两点确定一条直线。</p>
-<p>和之前证明的东西类似，只不过都需要加上$mod;p$。</p>
-<p>对此，主要讨论之前出现的两种情况，大胆利用实数域的做法，实际上方法一样。</p>
-<h4 id="CASE-1-P-Q-1"><a href="#CASE-1-P-Q-1" class="headerlink" title="CASE 1 P = Q :"></a>CASE 1 P = Q :</h4><p>$k \equiv \cfrac{3x^2_0 + a }{2y_0} (mod ; p)$</p>
-<p>得知直线方程后，计算$R_x \equiv k^2 - x1 - x2 (mod ;p )$</p>
-<h4 id="CASE-2-P-Q-并且-P-Q-R-1"><a href="#CASE-2-P-Q-并且-P-Q-R-1" class="headerlink" title="CASE 2 P != Q 并且 P + Q = -R:"></a>CASE 2 P != Q 并且 P + Q = -R:</h4><p>$k \equiv \cfrac{y_P - y_Q}{ x_P - x_Q} (mod ; p)$</p>
-<p>得知直线方程后，计算$R_x \equiv k^2 - x1 - x2 (mod ;p )$</p>
-<h4 id="CASE-3-P-Q-并且-P-Q-P-OR-P-Q-Q-1"><a href="#CASE-3-P-Q-并且-P-Q-P-OR-P-Q-Q-1" class="headerlink" title="CASE 3 P != Q 并且 P + Q = -P OR P + Q = -Q:"></a>CASE 3 P != Q 并且 P + Q = -P OR P + Q = -Q:</h4><p>这就是之前说到的第三种情况，在这种情况下，只需要计算</p>
-<p>$ \cfrac{3x^2_0 + a }{2y_0} (mod ; p) - \cfrac{y_P - y_Q}{ x_P - x_Q} (mod ; p)  \equiv 0 (mod ; p)$</p>
-<p>这种情况下，$P,Q$必有一点满足上式。将该点坐标的纵坐标求加法逆元即得到 -R。实际运算的时候可以和CASE2合并。</p>
-<p>之后，就可以写一个函数来计算-R的值了，在此就罗列一些关键代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_three_pionts</span><span class="params">(self, P, Q)</span>:</span></span><br><span class="line">    R = (<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> P == (<span class="number">0</span>, <span class="number">0</span>) <span class="keyword">or</span> Q == (<span class="number">0</span>, <span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> Q <span class="keyword">if</span> P == (<span class="number">0</span>, <span class="number">0</span>) <span class="keyword">else</span> P</span><br><span class="line">    <span class="keyword">if</span> self.__check_on_curve(P) <span class="keyword">and</span> self.__check_on_curve(Q):</span><br><span class="line">        <span class="comment"># CASE 1 P == Q</span></span><br><span class="line">        <span class="keyword">if</span> P == Q:</span><br><span class="line">            k = (<span class="number">3</span> * P[<span class="number">0</span>] ** <span class="number">2</span> + self.a) * egcd(<span class="number">2</span> * P[<span class="number">1</span>], self.p)</span><br><span class="line">            k %= self.p</span><br><span class="line">            b = P[<span class="number">1</span>] - k * P[<span class="number">0</span>]</span><br><span class="line">            b %= self.p</span><br><span class="line">            x = k ** <span class="number">2</span> - P[<span class="number">0</span>] - Q[<span class="number">0</span>]</span><br><span class="line">            y = k * x + b</span><br><span class="line">            R = (positive_mod(x, self.p), positive_mod(self.p - y, self.p))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># CASE 2 P != Q</span></span><br><span class="line">            k = (P[<span class="number">1</span>] - Q[<span class="number">1</span>]) * egcd(P[<span class="number">0</span>] - Q[<span class="number">0</span>], self.p)</span><br><span class="line">            k %= self.p</span><br><span class="line">            b = P[<span class="number">1</span>] - k * P[<span class="number">0</span>]</span><br><span class="line">            b %= self.p</span><br><span class="line">            x = k ** <span class="number">2</span> - P[<span class="number">0</span>] - Q[<span class="number">0</span>]</span><br><span class="line">            y = k * x + b</span><br><span class="line">            R = (positive_mod(x, self.p), positive_mod(self.p - y, self.p))</span><br><span class="line">        <span class="keyword">return</span> R</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">raise</span> ValueError</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="2-2-椭圆曲线阶"><a href="#2-2-椭圆曲线阶" class="headerlink" title="2.2 椭圆曲线阶"></a>2.2 椭圆曲线阶</h3><p>既然是在有限域$\mathbb {F}_{p}$内，那么椭圆曲线应该是有限个点构成的，所以，到底有多少个点呢？</p>
-<p>对于一个群而言，有多少点就叫做这个群的阶。比如模13群的阶为 13。同样，对于有限域$\mathbb {F}_{p}$上的椭圆曲线而言，也有对应的阶。枚举当然是很蠢的，有种算法叫做Schoof算法，它的复杂度是多项式时间，算法比较复杂。可以在github上找到其代码<a href="https://github.com/pdinges/python-schoof" target="_blank" rel="noopener">https://github.com/pdinges/python-schoof</a></p>
-<p>注意需要用 Linux 和 python3 运行，大概的用法如下所示：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">➜  python-schoof git:(master) ✗ python3  naive_schoof.py 23 4 2</span><br><span class="line">Counting points on y^2 = x^3 + 4x + 2 over GF&lt;23&gt;: 21</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-从数乘到循环子群"><a href="#2-3-从数乘到循环子群" class="headerlink" title="2.3 从数乘到循环子群"></a>2.3 从数乘到循环子群</h3><p>之前实现了连续域内的数乘，离散领域内容也是类似，利用相同的幂次加和来计算nP。唯一需要注意的就是对于n=0而言，直接返回单位元$\odot$（0,0）即可。主要代码如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_scalar_multiplication</span><span class="params">(self, n, P)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>: <span class="keyword">return</span> <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">    self.R = (<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    self.P = P</span><br><span class="line">    <span class="keyword">for</span> bit <span class="keyword">in</span> bits(n):</span><br><span class="line">        <span class="keyword">if</span> bit == <span class="number">1</span>:</span><br><span class="line">            self.R = self.get_three_pionts(self.P, self.R)</span><br><span class="line">        self.P = self.get_three_pionts(self.P, self.P)</span><br><span class="line">    <span class="keyword">return</span> self.R</span><br></pre></td></tr></table></figure>
-<p>实际上还有一些优化策略，会在之后讨论。</p>
-<p>当写完这个函数后，会发现椭圆曲线上有个很有意思特点，任取一条曲线如：<br>$$ y^2 \equiv x^3 + 2x + 3 (mod ;97)$$<br>已知点P(3,6)在该曲线上。</p>
-<p>我们来算算 $nP$是多少。</p>
-<ul>
-<li>$0P \rightarrow \odot$ </li>
-<li>$1P \rightarrow (3,6)$ </li>
-<li>$2P\rightarrow (80,10)$ </li>
-<li>$3P\rightarrow (80,87)$ </li>
-<li>$4P\rightarrow (3,91)$ </li>
-<li>$5P\rightarrow \odot$ <small><font color='gray'>备注：计算斜率的会出现<code>(n * x + p * y) % p != gcd</code>的情况，这也就意味着该点位于无穷远处</font></small></li>
-<li>$1P \rightarrow (3,6)$ </li>
-<li>$2P\rightarrow (80,10)$ </li>
-<li>$3P\rightarrow (80,87)$ </li>
-<li>$9P\rightarrow (3,91)$ </li>
-<li>$10P \rightarrow \odot$ </li>
-</ul>
-<p>不难发现P的倍乘是一个5阶循环群，生成元是$\langle \odot \rangle$,$\langle P \rangle$,$\langle 2P \rangle$,$\langle 3P \rangle$,$\langle 4P \rangle$</p>
-<p>同时可以发现，P的加法是一个闭环。也就意味着数乘的数字是可以提取的，如下面的公式所示：<br>$$mP + nP = \underbrace{P + P + \cdots + P}<em>{m\ \text{times}} + \underbrace{P + P + \cdots + P}</em>{n\ \text{times}} = (m + n)P $$</p>
-<p>于是，可以证明 <strong>nP的集合是椭圆曲线形成的群里的一个具有循环性质的子群（the set of the multiples of P is a cyclic subgroup of the group formed by the elliptic curve.）</strong> 这里的P是生成元，或者叫基点。</p>
-<p>也就是说，如果我们知道它是多少阶的循环群的话，计算 nP的代码就可以更加精简。</p>
-<h3 id="2-4-循环子群的阶讨论"><a href="#2-4-循环子群的阶讨论" class="headerlink" title="2.4 循环子群的阶讨论"></a>2.4 循环子群的阶讨论</h3><p>之前不难发现，P生成子群地阶是多少。之前那个P的倍乘是一个5阶循环子群，对于其他的P和曲线而言不一定适用。那么，如何去计算阶数n呢？显然用 Schoof算法不可行，毕竟它是对于一整个椭圆曲线适用，对于其子群无效。</p>
-<ul>
-<li>设一个群G的阶为N。任取一个生成自群G的循环子群，设它的阶数是n，生成元为P， n,P 满足的条件是 nP=0 。就好像之前的 5P=0 。（这里的群说的是有限域内的椭圆曲线，只说思路，没加证明）</li>
-<li>P 的阶和椭圆曲线是有联系的，根据<a href="https://baike.baidu.com/item/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86/7217921?fr=aladdin#3" target="_blank" rel="noopener">拉格朗日定理</a>，子群的阶是父群的阶的因子。换句话说，如果一个椭圆曲线包含 N 个点，它的一个子群包含 n 个点，那么 n 是 N 的因子。</li>
-</ul>
-<p>结合上述两个定律，那么n的计算可以通过如下步骤</p>
-<ul>
-<li>用 Schoof 计算 椭圆曲线的阶 $N$</li>
-<li>从小到大遍历 $N$ 的所有因子</li>
-<li>找到最小的$n$ 使得 $nP = 0$</li>
-</ul>
-<h3 id="2-5-寻找子群与离散对数问题"><a href="#2-5-寻找子群与离散对数问题" class="headerlink" title="2.5 寻找子群与离散对数问题"></a>2.5 寻找子群与离散对数问题</h3><p>之前讨论了很多椭圆曲线上的东西。那么，如何利用ECC去加密解密呢？</p>
-<p>首先补充一点拉格朗日定理的东西。拉格朗日定理证明$h = N/n$永远是一个整数，称 $h$为辅因子。引入$h$。那么可以得到$n(hP)=0$</p>
-<p>由此，总结一下ECC的算法步骤</p>
-<ul>
-<li>计算椭圆曲线的阶 $N$</li>
-<li>选择一个阶为 $n$ 的子群，n为素数且为$N$的因子。</li>
-<li>计算辅因子 $h = N/n$</li>
-<li>在曲线上选择一个基点 P</li>
-<li>计算 $G = hP$</li>
-<li>如果G是0，那么重新选择基点否则找到了阶为$n$，生成元为$P$的子群</li>
-</ul>
-<!--正如RSA的数学难题来自于对于已知的a,b,如何求$b \equiv a^k mod \; p$中的k一样-->。
-<p>现在，假设有一条的在有限域$\mathbb {F}_{p}$上的椭圆曲线，要解决的问题是：<br><strong>如果我们已知 P和Q ，对于 Q = kP ，我们应该怎么去计算这个 k ?</strong><br>这个是椭圆曲线中大名鼎鼎的离散对数问题。也是其最为核心之处。</p>
-<p>ECC有趣的地方在于，它的离散问题看上去比其他密码学中的离散问题难多了。这就说明我们可以用更少的位数的整数 k 做到和其他加密算法一样安全级别的加密效果。</p>
-<!--于是，思考一二。阶$N$是一个群G点的数量，而对于该群G的循环子群H而言，H的阶数一定是N的因子-->
-
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%8E%E5%AE%9E%E6%95%B0%E5%9F%9F%E5%88%B0%E6%9C%89%E9%99%90%E5%9F%9F%E7%9A%84%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ECC 椭圆曲线加密算法学习————安全性问题与实战" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%AE%89%E5%85%A8%E6%80%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%AE%9E%E6%88%98/">ECC 椭圆曲线加密算法学习————安全性问题与实战</a>
+    <h1 class="article-title" itemprop="name">
+      ECC 椭圆曲线加密算法学习————安全性问题与实战
     </h1>
   
 
@@ -608,6 +370,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -615,16 +398,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%AE%89%E5%85%A8%E6%80%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%AE%9E%E6%88%98/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%AE%89%E5%85%A8%E6%80%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%AE%9E%E6%88%98/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%8E%E5%AE%9E%E6%95%B0%E5%9F%9F%E5%88%B0%E6%9C%89%E9%99%90%E5%9F%9F%E7%9A%84%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94ECDH%E4%B8%8EECDSA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ECC 椭圆曲线加密算法学习————ECDH与ECDSA</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -644,318 +495,14 @@
 
 
 
-
   
-    <article id="post-ECC 椭圆曲线加密算法学习————ECDH与ECDSA" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94ECDH%E4%B8%8EECDSA/">ECC 椭圆曲线加密算法学习————ECDH与ECDSA</a>
-    </h1>
   
 
-        
-        <a href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94ECDH%E4%B8%8EECDSA/" class="archive-article-date">
-  	<time datetime="2020-05-21T19:14:44.941Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ECC-椭圆曲线加密算法学习————ECDH与ECDSA"><a href="#ECC-椭圆曲线加密算法学习————ECDH与ECDSA" class="headerlink" title="ECC 椭圆曲线加密算法学习————ECDH与ECDSA"></a>ECC 椭圆曲线加密算法学习————ECDH与ECDSA</h1><p>标签（空格分隔）： ecc Crypto</p>
-<hr>
-<blockquote>
-<p> *<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong><br>    &gt; File Name: ECC 椭圆曲线加密算法学习————ECDH与ECDSA<br>    &gt; Author: shaobaobaoer<br>    &gt; Mail: <a href="mailto:shaobaobaoer@126.com">shaobaobaoer@126.com</a><br>    &gt; WebSite: shaobaobaoer.cn<br>    &gt; Time: Sunday, 25. March 2019 22:42PM<br> *<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
-</blockquote>
-<p><font color='green'>&lt;!–查看注释有惊喜–&gt;</font></p>
-<h2 id="0x00-前言"><a href="#0x00-前言" class="headerlink" title="0x00 前言"></a>0x00 前言</h2><p>之前学习了实数域上的椭圆曲线与有限域$\mathbb {F}_{p}$上的椭圆曲线。详细可以参考<a href="http://shaobaobaoer.cn/archives/ecc-learning-elliptic-curve-from-real-to-finite-field" target="_blank" rel="noopener">ECC椭圆加密算法学习————从实数域到有限域的椭圆曲线</a>。</p>
-<p>不难发现，在实数域的标量乘法看上去是一个“简单”的问题，但是在有限域$\mathbb {F}_{p}$就显得非常困难。本文主要讨论如何将之前所学的运用于加密问题中。</p>
-<h3 id="相关代码"><a href="#相关代码" class="headerlink" title="相关代码"></a>相关代码</h3><ul>
-<li>本文的完整代码<ul>
-<li><a href="https://github.com/ninthDevilHAUNSTER/ecc_learning" target="_blank" rel="noopener">https://github.com/ninthDevilHAUNSTER/ecc_learning</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="一些重要的域参数"><a href="#一些重要的域参数" class="headerlink" title="一些重要的域参数"></a>一些重要的域参数</h3><ul>
-<li>素数 $p$ </li>
-<li>椭圆曲线系数 $a$ 与 $b$</li>
-<li>基点（生成元） $G$</li>
-<li>子群的阶$n$</li>
-<li>辅因子$h$</li>
-</ul>
-<p>之后，将这六个域参数组合成一个一个六元组$(p,a,b,G,n,h)$</p>
-<p>在后文中会经常用到</p>
-<h3 id="本文代码"><a href="#本文代码" class="headerlink" title="本文代码"></a>本文代码</h3><h2 id="0x01-椭圆曲线加密算法"><a href="#0x01-椭圆曲线加密算法" class="headerlink" title="0x01 椭圆曲线加密算法"></a>0x01 椭圆曲线加密算法</h2><p>尽管之前花了很长时间的铺垫，但是椭圆曲线的密码学策略，简单而纯粹</p>
-<p>在选取完毕一个六元组后，定义如下内容</p>
-<ul>
-<li>私钥： 一个随机的整数$d$，选取自${1,…,n-1}$</li>
-<li>公钥：$H = dG$  （$G$是循环子群的生成元）</li>
-</ul>
-<p>至此，来考虑一个问题<br>如果我们知道 $d$与六元组，那么很简单就可以算出$H$了。但是，如果我们只知道$H$和$G$，去寻找一个$d$是非常困难的，因为这需要解决离散对数问题。</p>
-<p>通过这一组密钥，可以衍生出两种经典的椭圆曲线加密算法，分别是 ECDH，可以用来加密。以及 ECDSA ，可以用来数字签名</p>
-<h2 id="0x02-ECDH-加密算法"><a href="#0x02-ECDH-加密算法" class="headerlink" title="0x02 ECDH 加密算法"></a>0x02 ECDH 加密算法</h2><p>ECDH是<a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange" target="_blank" rel="noopener">Diffie—Hellman算法</a>的衍生。关于DH算法这里不展开，如果能学到这里想必对DSA与DH都有一定程度的了解。</p>
-<h3 id="2-1-ECDH-的工作过程"><a href="#2-1-ECDH-的工作过程" class="headerlink" title="2.1 ECDH 的工作过程"></a>2.1 ECDH 的工作过程</h3><p>ECDH的工作原理如下所示，实际上和纯粹的DH算法有着非常相似的地方</p>
-<ul>
-<li>Alice 和 Bob 首先约定一个六元组，生成自己的私钥和公钥。定义数据结构如下<ul>
-<li>Alice Private Key : $d_A$</li>
-<li>Alice Public Key : $H_A = d_AG$</li>
-<li>Bob Private Key : $d_B$</li>
-<li>Bob Public Key : $H_B = d_BG$</li>
-</ul>
-</li>
-<li>Alice 和 Bob 公开得交换公钥。第三方可以窃听到 公钥$H_A$和$H_B$，但是他无法解出$d_A$和$d_B$</li>
-<li>Alice 用自己的私钥计算 $S_A = d_A H_B$；Bob 用自己的私钥计算 $S_B = d_B H_A$</li>
-</ul>
-<p>很显然 $S_A = S_B$ 因为以下算式</p>
-<p>$$S = d_AH_B = d_A(d_B G) = d_B(d_A G)$$</p>
-<p>对此，可以将上述过程总结为一个数学问题。</p>
-<blockquote>
-<p><big>给定三个点 P,aP,bP,那么abP的结果是什么？</big></p>
-</blockquote>
-<p>总之，ECDH的问题也被归结为非常困难的那一类。尽管无法证明有多困难，但是这个难度应该和在上一篇文章最后提及的椭圆曲线难题的难度相当。</p>
-<ul>
-<li>此时，Alice和Bob已经获得了共享密钥，可以通过对称加密来交换数据</li>
-</ul>
-<p>比如说，他们可以使用S的x坐标密钥，使用AES或者3DES加密消息。<br>实际上在TLS的过程中中，TLS将x坐标与其他相关的数字关联起来，从而计算得到字节型字符串的散列。</p>
-<h3 id="2-2-ECDH-加密解密实践"><a href="#2-2-ECDH-加密解密实践" class="headerlink" title="2.2 ECDH 加密解密实践"></a>2.2 ECDH 加密解密实践</h3><p>之前为了解释算法的过程，所以采用了非常简单的椭圆曲线。实际上，运用在实际中的曲线非常复杂。有一个组织叫高效密码学标准协会SECG。制定了一系列的高强度的密码学标准。可以在<a href="http://www.secg.org/sec2-v2.pdf" target="_blank" rel="noopener">相关文档</a>中查到高强度的密码学参数。</p>
-<p>在此，选取了<code>Secp256k1</code>作为之后演示的例子。同时<code>secp256k1</code>也是<a href="https://en.bitcoin.it/wiki/Secp256k1" target="_blank" rel="noopener">比特币公钥加密中的椭圆曲线参数</a>。<br>其六元组的构成如下所示:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p  = <span class="number">0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f</span></span><br><span class="line">a = <span class="number">0</span></span><br><span class="line">b = <span class="number">7</span></span><br><span class="line">xG = <span class="number">0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798</span></span><br><span class="line">yG = <span class="number">0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8</span></span><br><span class="line">n = <span class="number">0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141</span></span><br><span class="line">h = <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p>通过一个简单的脚本，可以还原上述过程，如果一切顺利，S_A 与 S_B 无论如何都是相等的</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Curve: secp256k1</span><br><span class="line">Alice<span class="string">'s private key: 103578888203905683147310628925141324706004210586941582062255108435073330635559</span></span><br><span class="line"><span class="string">Alice'</span>s public key: (<span class="number">72205313168121137722470139642970359323314163425341806818266474706052417395420</span>, <span class="number">42908651374588414209406038144703625728727324613824233811609705542553632995837</span>)</span><br><span class="line">Bo<span class="string">b's private key: 97727733532815547475289836254065376178409286030674739848985976984975775000167</span></span><br><span class="line"><span class="string">Bob'</span>s public key: (<span class="number">5226211608039988834249916327528388136314009566006478722042576040985411258297</span>, <span class="number">76867928087387169315809382707245048142671884194759753857442364958995784506075</span>)</span><br><span class="line">Shared secret calculate by Alice : (<span class="number">90402392865121638378190357760493775057772079441731676814490847255017097141119</span>, <span class="number">29964306249717728516272468678674342055122755840848542530168745390980111134510</span>)</span><br><span class="line">Shared secret calculate by Bob : (<span class="number">90402392865121638378190357760493775057772079441731676814490847255017097141119</span>, <span class="number">29964306249717728516272468678674342055122755840848542530168745390980111134510</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-临时-Ephermeral-ECDH"><a href="#2-3-临时-Ephermeral-ECDH" class="headerlink" title="2.3 临时(Ephermeral) ECDH"></a>2.3 临时(Ephermeral) ECDH</h3><p>ECDHE 也是一种常见的ECDH算法。其中的E表示短暂的。指交换的密钥是临时的，而不是静态的。在TLS中使用ECDHE。那么客户端和服务端在建立连接时即时生成其公钥私钥对，然后使用TLS证书对密钥进行签名，然后在各方之间交换</p>
-<h2 id="0x03-ECDSA-加密算法"><a href="#0x03-ECDSA-加密算法" class="headerlink" title="0x03 ECDSA 加密算法"></a>0x03 ECDSA 加密算法</h2><p>ECDSA 的使用场景如下：<br>Alice想要用她的私钥$d_A$对一个消息进行签名。Bob希望通过Alice的公钥$H_A$来验证对消息的签名。但是只有Alice能够签名，其他人只能验证她的签名。</p>
-<p>同样Alice和Bob使用相同的六元组域参数。所谓ECDSA是应用于椭圆曲线的DSA数字签名算法的变体。<br>关于DSA的具体细节，可以看看<a href="http://shaobaobaoer.cn/archives/567/dsa%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8Epython%E5%AE%9E%E7%8E%B0" target="_blank" rel="noopener">我之前写的文章</a>（PS: 代码有些问题，当初连模逆运算都不是很懂）</p>
-<p>ECDSA处理的是消息的哈希值，而不是消息本身，散列函数选择取决于双方，但是应当选用<a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener">安全的散列函数</a>。在此，我们定义消息的散列值为$z$<!--散列值会被截断，截断的位长度与n的位程度相同。截断的散列是一个整数，表示为$z$。--></p>
-<h3 id="3-1-ECDSA-的签名过程"><a href="#3-1-ECDSA-的签名过程" class="headerlink" title="3.1 ECDSA 的签名过程"></a>3.1 ECDSA 的签名过程</h3><p>ECDSA 的流程如下所示：</p>
-<p>预定完毕一个六元组后，Alice首先定义公钥和私钥</p>
-<ul>
-<li>私钥： 一个随机的整数$d_A$，选取自${1,…,n-1}$</li>
-<li>公钥: $H_A = d_AG$  （$G$是循环子群的生成元）</li>
-</ul>
-<p>随后，Alice 定义如下内容</p>
-<ul>
-<li>选取一个随机的整数$k$，选取自${1,…,n-1}$</li>
-<li>计算 $P = kG$  （$G$是循环子群的生成元）</li>
-<li>计算 $r \equiv x_p ;(mod ;n );$ ($x_p$ 是P的横坐标)</li>
-<li>如果 $r = 0 $ 则重新选取k</li>
-<li>计算 $s \equiv k^{-1} ( z + rd_A); (mod;n)$ ($d_A$是Alice的私钥，$k^{-1}$是$k$的逆元)</li>
-<li>如果 $s = 0 $ 则重新选取k</li>
-<li>将 $(r,s)$ 封装为一个签名</li>
-</ul>
-<p>简单来说，该算法生成了一个密钥k。该密钥通过标量积隐藏在签名的$r$中。之前也说过，通过$P$和$G$计算$k$，是有限域椭圆曲线的数学难题。<br>随后$r$通过算式 $s \equiv k^{-1} ( z + rd_A); (mod;n)$与消息散列$z$建立起联系。并将$r$和$s$封装为签名。</p>
-<p>为了计算$s$，需要知道$k$的对于$n$的逆元。在之前说到过，如果$n$是个合数，那么在计算模逆的时候会出些一些非常棘手的状况。<strong>所以如果私钥不是素数，那么ECDSA就不能够被使用。</strong><!--If a subgroup has a non-prime order, ECDSA can't be used.不是很懂什么叫做 non-prime order-->当然，在制定高强度密码学标准的时候，自然是考虑到了这种情况</p>
-<h3 id="3-2-ESDSA-的验证过程"><a href="#3-2-ESDSA-的验证过程" class="headerlink" title="3.2 ESDSA 的验证过程"></a>3.2 ESDSA 的验证过程</h3><p>对于Bob而言，他知道$z$和$(r,s)$，可以这样来验证签名</p>
-<ul>
-<li>计算 $u_1 \equiv s^{-1} z ;(mod ;n)$</li>
-<li>计算 $u_2 \equiv s^{-1} r ;(mod ;n)$</li>
-<li>计算 $P_0 = u_1G + u_2H_A$</li>
-<li>当且仅当 $ r=xP;mod;n $的时候 $P_0 = H_A$</li>
-</ul>
-<h3 id="3-3-ESDSA-的正确性验证"><a href="#3-3-ESDSA-的正确性验证" class="headerlink" title="3.3 ESDSA 的正确性验证"></a>3.3 ESDSA 的正确性验证</h3><p>首先从最后一步开始：（严谨而言下面每个式子都需要模n）<br>$$<br>\begin{eqnarray}<br>P =&amp;   u_1G + u_2H_A \<br>=&amp; u_1G + u_2d_AG\<br>=&amp; (;u_1 + u_2d_A; ); G<br>\end{eqnarray}<br>$$</p>
-<p>之后回带 $u_1$,$u_2$<br>$$<br>\begin{eqnarray}<br>P =&amp; (;u_1 + u_2d_A; ); G \<br>=&amp; (;s^{-1} z  +  s^{-1} rd_A;) ;G\<br>=&amp; s^{-1}(;z + rd_A;); G<br>\end{eqnarray}<br>$$</p>
-<p>∵ $s = k^{-1}(;z + rd_A;); mod ; n  $<br>∴ $ k = s^{-1}(;z + rd_A;); mod ; n$<br>因此的得证 $ P = kG$</p>
-<p>综上所述，可以将ECDSA的过程用下图来概括</p>
-<p><img src="http://static.zybuluo.com/shaobaobaoer/8toy2hk4akcq4rk1ydklx75n/image_1d6nq8u9u1vd1lro1aqn10bh1ugug.png" alt="image_1d6nq8u9u1vd1lro1aqn10bh1ugug.png-19.8kB"></p>
-<h3 id="3-4-ESDSA-签名与验证演示"><a href="#3-4-ESDSA-签名与验证演示" class="headerlink" title="3.4 ESDSA 签名与验证演示"></a>3.4 ESDSA 签名与验证演示</h3><p>我写了一个ESDSA签名与验证的脚本，其输出内容如下所示。详细代码可以再github里查看</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Curve: secp256k1</span><br><span class="line">Private key: <span class="number">104402155858234843462820049838931863424340700345639408070129091750274190501639</span></span><br><span class="line">Public key: (<span class="number">26871662523956236501334015334554552355718345422423650192015494443518483271191</span>, <span class="number">78585437455917839772708635641693122787004414694759872862060571807949572029114</span>)</span><br><span class="line"></span><br><span class="line">Message: <span class="number">79600447942433</span></span><br><span class="line">Signature: (<span class="number">90544279873496095960562757005038315753760612769739282803554290388042828042546</span>, mpz(<span class="number">81447758399901905504654585382621756821500911503165874513424939904998314198491</span>))</span><br><span class="line">Verification: signature matches</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-5-ESDSA-简单攻击演示"><a href="#3-5-ESDSA-简单攻击演示" class="headerlink" title="3.5 ESDSA 简单攻击演示"></a>3.5 ESDSA 简单攻击演示</h3><p>生成ECDSA签名时，保守秘密非常重要 ķ真的很秘密。如果我们使用相同的ķ来签名，或者如果随机数生成器可预测，<strong>攻击者就能找到私钥</strong></p>
-<p>如果使用相同的k进行签名，将会发生一些有趣的事情。也是<a href="https://www.bbc.com/news/technology-12116051" target="_blank" rel="noopener">索尼在11年前犯的错误</a></p>
-<p>在计算开始之前，首先我们应当知道域参数的六元组（或者曲线名称），两组签名 $(r_1,s_1),(r_2,s_2)$与哈希值$z1$,$z2$。以及公钥 $S_A$</p>
-<p>对于相同的k生成的两组签名 $(r_1,s_1),(r_2,s_2)$而言。</p>
-<ul>
-<li>最先确定的是$r1=r2$</li>
-<li>两式相减可得 $$s_1 - s_2 \equiv k^{-1} \times (z_1 -z_2) ; mod ;n$$</li>
-<li>两边同乘k后将k的系数除过去 可得 $$k   \equiv (s_1 - s_2)^{-1} \times (z_1 -z_2) ; mod ;n$$</li>
-<li>此时，就可以计算出$k$，再利用 $k$ 可以计算出私钥$d_A$<br>$$s \equiv k^{-1} (z _ rd_A) ; mod ; n \Longrightarrow d_A \equiv  r{-1} (sk -z ) ; mod ; n$$</li>
-</ul>
-<!--实际上，和DH本质算式对比，可以发现相同之处；DH最后密钥认证阶段满足的等式是-->
-
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94ECDH%E4%B8%8EECDSA/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/test/">test</a>
-    </h1>
   
 
-        
-        <a href="/2020/05/22/test/" class="archive-article-date">
-  	<time datetime="2020-05-21T19:03:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/test/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2020/05/22/hello-world/" class="archive-article-date">
-  	<time datetime="2020-05-21T18:35:04.043Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -978,8 +525,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

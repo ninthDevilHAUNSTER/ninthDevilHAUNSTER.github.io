@@ -6,15 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线标签（空格分隔）： ecc Crypto    ****    &gt; File Name: ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线    &gt; Author: shaobaobaoer    &gt; Mail: shaobaobaoer@126.com    &gt; WebSite: shaobaob">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线">
+<meta property="og:url" content="http://yoursite.com/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%8E%E5%AE%9E%E6%95%B0%E5%9F%9F%E5%88%B0%E6%9C%89%E9%99%90%E5%9F%9F%E7%9A%84%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线标签（空格分隔）： ecc Crypto    ****    &gt; File Name: ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线    &gt; Author: shaobaobaoer    &gt; Mail: shaobaobaoer@126.com    &gt; WebSite: shaobaob">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://static.zybuluo.com/shaobaobaoer/ipfefuzlwnscuxvz0o2aybfv/image_1d6kcqrgb13j7sbbqsl5pq1t449.png">
+<meta property="og:image" content="http://static.zybuluo.com/shaobaobaoer/tq4r54561st2eyftbd9zr6g5/image_1d6ke29sgttoe4f1jmf1j7e18cnm.png">
+<meta property="og:image" content="http://static.zybuluo.com/shaobaobaoer/hqo6k3g5qfzjx0iovjy1pkof/image_1d6kgl87h19krnf911311hvhej613.png">
+<meta property="og:image" content="http://static.zybuluo.com/shaobaobaoer/zrdg6dnqpoma30ejw52ojymm/discreteEC_-7_10_19_12_48AM.png">
+<meta property="og:image" content="http://static.zybuluo.com/shaobaobaoer/ndycvqrvj64jswepdq2ynjf6/discreteEC_-7_10_97_12_48AM.png">
+<meta property="article:published_time" content="2020-05-21T19:14:44.943Z">
+<meta property="article:modified_time" content="2020-05-21T19:07:00.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://static.zybuluo.com/shaobaobaoer/ipfefuzlwnscuxvz0o2aybfv/image_1d6kcqrgb13j7sbbqsl5pq1t449.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,16 +160,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%8E%E5%AE%9E%E6%95%B0%E5%9F%9F%E5%88%B0%E6%9C%89%E9%99%90%E5%9F%9F%E7%9A%84%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/">ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线</a>
+    <h1 class="article-title" itemprop="name">
+      ECC 椭圆曲线加密算法学习————从实数域到有限域的椭圆曲线
     </h1>
   
 
@@ -357,6 +365,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -364,16 +393,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%8E%E5%AE%9E%E6%95%B0%E5%9F%9F%E5%88%B0%E6%9C%89%E9%99%90%E5%9F%9F%E7%9A%84%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%8E%E5%AE%9E%E6%95%B0%E5%9F%9F%E5%88%B0%E6%9C%89%E9%99%90%E5%9F%9F%E7%9A%84%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%AE%89%E5%85%A8%E6%80%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%AE%9E%E6%88%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ECC 椭圆曲线加密算法学习————安全性问题与实战</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -393,569 +481,14 @@
 
 
 
-
   
-    <article id="post-ECC 椭圆曲线加密算法学习————安全性问题与实战" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%AE%89%E5%85%A8%E6%80%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%AE%9E%E6%88%98/">ECC 椭圆曲线加密算法学习————安全性问题与实战</a>
-    </h1>
   
 
-        
-        <a href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%AE%89%E5%85%A8%E6%80%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%AE%9E%E6%88%98/" class="archive-article-date">
-  	<time datetime="2020-05-21T19:14:44.942Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ECC-椭圆曲线加密算法学习————安全性问题与实战"><a href="#ECC-椭圆曲线加密算法学习————安全性问题与实战" class="headerlink" title="ECC 椭圆曲线加密算法学习————安全性问题与实战"></a>ECC 椭圆曲线加密算法学习————安全性问题与实战</h1><p>标签（空格分隔）： ecc Crypto</p>
-<hr>
-<blockquote>
-<p> *<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong><br>        &gt; File Name: ECC 椭圆曲线加密算法学习————安全性问题与实战<br>        &gt; Author: shaobaobaoer<br>        &gt; Mail: <a href="mailto:shaobaobaoer@126.com">shaobaobaoer@126.com</a><br>        &gt; WebSite: shaobaobaoer.cn<br>        &gt; Time: Sunday, 24. March 2019 11:05PM<br> *<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
-</blockquote>
-<h2 id="0x00-前言"><a href="#0x00-前言" class="headerlink" title="0x00 前言"></a>0x00 前言</h2><p>之前学习了ECDSA 和 ECDH 算法。不难发现椭圆曲线的离散对数难题对该密码的安全性有着多么重要的作用。之前谈及，椭圆曲线的离散对数难题非常难，尽管如此，也应该有些方法可以解开这个问题。就好像对于模运算的密码系统，比如RSA而言，可以用<code>yafu</code>工具来强解，也可以上某网站查表，也包括一些共模攻击，小指数攻击等方法。</p>
-<h3 id="参考的网站"><a href="#参考的网站" class="headerlink" title="参考的网站"></a>参考的网站</h3><ul>
-<li><a href="https://andrea.corbellini.name/2015/06/08/elliptic-curve-cryptography-breaking-security-and-a-comparison-with-rsa/" target="_blank" rel="noopener">https://andrea.corbellini.name/2015/06/08/elliptic-curve-cryptography-breaking-security-and-a-comparison-with-rsa/</a></li>
-<li><a href="https://github.com/p4-team" target="_blank" rel="noopener">https://github.com/p4-team</a></li>
-</ul>
-<h3 id="相关代码"><a href="#相关代码" class="headerlink" title="相关代码"></a>相关代码</h3><ul>
-<li>本文的完整代码<ul>
-<li><a href="https://github.com/ninthDevilHAUNSTER/ecc_learning" target="_blank" rel="noopener">https://github.com/ninthDevilHAUNSTER/ecc_learning</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="0x01-BSGS-小步大步法"><a href="#0x01-BSGS-小步大步法" class="headerlink" title="0x01 BSGS 小步大步法"></a>0x01 BSGS 小步大步法</h2><p>方法的英文名是Baby-step, giant-step，这个算法基于一个非常简单的道理</p>
-<p>$$Q = xP = (am +b)P \Longrightarrow Q -amP = bP$$</p>
-<h3 id="1-1-算法简介"><a href="#1-1-算法简介" class="headerlink" title="1.1 算法简介"></a>1.1 算法简介</h3><p>BSGS方法的步骤就是中间相遇。算是一种比较机智的暴力搜索法。该算法的工作步骤如下。</p>
-<p>对于知道公钥和域参数六元组的情况下</p>
-<ul>
-<li>计算 $m = \sqrt{n}$</li>
-<li>对于 $b={0..m}$，计算$bP$并打表</li>
-<li>对于 $a={0..m}$<ul>
-<li>计算 $Q - amP$</li>
-<li>寻找与 上式子结果相同的 $bP$</li>
-<li>如果找到，那么$k=b + am$</li>
-</ul>
-</li>
-</ul>
-<p>那么所谓的baby其实就是b。而gaint 就是 am。参考某作者的一张图片，可以很清晰的阐明这个思路。<br><img src="http://static.zybuluo.com/shaobaobaoer/men4kgdq0r0k6dbe5klhbuzf/baby-step-giant-step.gif" alt="baby-step-giant-step.gif-154.8kB"></p>
-<p>之所以取 $m = \sqrt{n}$ 是因为这样可以取遍所有 n的情况</p>
-<ul>
-<li>对于 $a = 0 ; Q = (0m + b)P$ 这样就去遍历了所有 $Q = (1..m)P$  的情况</li>
-<li>对于 $a = 1 ; Q = (m + b)P$ 这样就去遍历了所有 $Q = m + (1..m)P$  的情况</li>
-<li>…</li>
-<li>对于 $a = m-1 ; Q = (m-1 + b)P$ 这样就去遍历了所有 $Q = (m)m + (1..m)P$  的情况</li>
-</ul>
-<p>之后来看下其复杂度，如果认为查表的速度为O(1)，那么该算法的时间复杂度和空间复杂度是$O(\sqrt{n})$<br>实际上这还是一个非常大的数字。</p>
-<p>对于<code>prime256v1</code>而言，$\sqrt{n}$大概为$3.402823669209385 \times 10^{38}$。即使是哈希表的每个节点占1B，那也必然是Memory Error。</p>
-<h3 id="1-2-算法实践"><a href="#1-2-算法实践" class="headerlink" title="1.2 算法实践"></a>1.2 算法实践</h3><p>之后可以简单实践以下这个算法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">BSGS</span><span class="params">(E, p, q)</span>:</span></span><br><span class="line">    <span class="comment"># B</span></span><br><span class="line">    step = <span class="number">0</span></span><br><span class="line">    hash_table = &#123;&#125;</span><br><span class="line">    m = math.floor(math.sqrt(E.GF))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(m):</span><br><span class="line">        tmp = E.get_scalar_multiplication(i, p)</span><br><span class="line">        hash_table[tmp] = i</span><br><span class="line">    hash_list = hash_table.keys()</span><br><span class="line">    <span class="comment"># G</span></span><br><span class="line">    <span class="keyword">for</span> a <span class="keyword">in</span> range(m):</span><br><span class="line">        amP = E.get_scalar_multiplication(-a * m, p)</span><br><span class="line">        Q_amP = E.get_three_pionts(amP, q)</span><br><span class="line">        <span class="keyword">if</span> Q_amP <span class="keyword">in</span> hash_list:</span><br><span class="line">            <span class="keyword">return</span> hash_table[Q_amP] + a * m, step</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            step += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>, <span class="number">0</span></span><br></pre></td></tr></table></figure>
-<p>对于这样的测试样例，很快就可以算出来了。（我算了102步）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">E = EllipticCurve(a=<span class="number">1</span>, b=<span class="number">-1</span>, p=<span class="number">10177</span>, GF=<span class="number">10331</span>)</span><br><span class="line">p = (<span class="number">0x1</span>, <span class="number">0x1</span>)</span><br><span class="line">q = (<span class="number">0x1a28</span>, <span class="number">0x8fb</span>)</span><br><span class="line">k = <span class="number">325</span></span><br><span class="line">k0, step = BSGS(E, p, q)</span><br></pre></td></tr></table></figure>
-
-<h2 id="0x02-Pollard-rho-算法"><a href="#0x02-Pollard-rho-算法" class="headerlink" title="0x02 Pollard rho 算法"></a>0x02 Pollard rho 算法</h2><p>刚才谈及，小步大步算法的空间复杂度太高，对于大参数曲线无法使用。因此得想些别的办法。pallard rho算法就是解决了这样的问题，时间复杂度与BSGS一样（但是理论上BSGS更快），空间复杂度只有$O(1)$</p>
-<p>其核心思想是找到满足 $aP+bQ=AP+BQ$的参数$a,b,A,B$</p>
-<p>对于 $Q = xP$ 有如下等式。</p>
-<p>$$aP+bQ=AP+BQ\<br>aP+bQ=AP+BxP\<br>(a+bx)P=(A+Bx)P\<br>(a−A)P=(B−b)xP$$</p>
-<p>如果要约去 $P$，需要加上取余符号。这步骤有点类似与同k的x计算方法。将x独立出来，可以得到</p>
-<p>$$x \equiv (a-A) \times (B-b)^{-1}; mod; n $$</p>
-<p>这样就可以算出$x$了</p>
-<p>那么如何取确定$a,b,A,B$呢？之前说过，椭圆曲线的标量积满足分配律。这就意味着，如果定义一串伪随机数序列$(a_n,b_n)$，因为$P$和$Q$的标量积是有循环性质的，所以$aP+bQ$也是循环的。</p>
-<p>当我们产生出这样一个循环序列后，从该序列中任取一组$(a,b)$随后更具循环序列的性质，找到满足$aP+bQ=AP+BQ$的$A$与$B$即可。</p>
-<h3 id="2-1-计算循环序列"><a href="#2-1-计算循环序列" class="headerlink" title="2.1 计算循环序列"></a>2.1 计算循环序列</h3><p>非常糟糕的是，如果对所有a,b进行遍历，所需要的复杂度是$O(n^2)$显然这不能满足需求。而实际上有一种算法能够很好的解决这样的问题。该算法称为乌龟野兔算法，也称为弗洛伊德发现算法。</p>
-<p>其算法大意就是定义两个点，分别对应(a,b)和(A,b），一个点（乌龟）每个时间步前进一格，也就是逐一读取伪随机序列中的点。另一个（兔子）每个时间步前进两格，也就是一个跳一个读取伪随机序列中的点。如果点的范围超出了循环子群的阶n。那么对其进行取余操作。</p>
-<p><img src="http://static.zybuluo.com/shaobaobaoer/stfat7z110hnm1kbloq4qhng/tortoise-hare.gif" alt="tortoise-hare.gif-48.5kB"></p>
-<blockquote>
-<p>如图所示，对于曲线$y^2≡x^3+2x+3;(mod;97)$ 首先它的循环子群阶为5。定义两个点 (a,b)。 和 (A,B) 绿色的代表乌龟，红色的代表兔子。很快就能找到两个相同的点。</p>
-</blockquote>
-<p>如果随机序列是静态存储的话。那么空间复杂度就是 $O(1)$。如果随机序列是动态生成的话，那么空间复杂度大概是是$O(logn)$。计算渐进随机序列的时间复杂度非常困难，利用概率证明来证明时间复杂度的话，可以得到$O(\sqrt(n))$。</p>
-<h3 id="2-2-算法实践"><a href="#2-2-算法实践" class="headerlink" title="2.2 算法实践"></a>2.2 算法实践</h3><p>修了修原文作者造的轮子，于是就能用了。他随机序列方法和图中有些不太一样，大概就是采用<code>+;*;+</code>的顺序。感觉挺有意思的，有兴趣的话可以去我的github底下看看。最终的结果为</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    E = EllipticCurve(a=<span class="number">1</span>, b=<span class="number">-1</span>, p=<span class="number">10177</span>, GF=<span class="number">10331</span>)</span><br><span class="line">    p = (<span class="number">0x1</span>, <span class="number">0x1</span>)</span><br><span class="line">    q = (<span class="number">0x1a28</span>, <span class="number">0x8fb</span>)</span><br><span class="line">    k = <span class="number">325</span></span><br><span class="line">    print(log(p, q, E))</span><br><span class="line">(<span class="number">325</span>, <span class="number">221</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="0x03-量子算法-Shor"><a href="#0x03-量子算法-Shor" class="headerlink" title="0x03 量子算法 Shor"></a>0x03 量子算法 Shor</h2><p>很显然，哪怕把复杂度降低到$O(\sqrt n)$，仍然也解决不了数学难题，那未来的技术呢？确实存在一种能够在多项式时间内计算离散对数的量子算法：<a href="https://en.wikipedia.org/wiki/Shor%27s_algorithm" target="_blank" rel="noopener">Shor算法</a>，具有时间复杂度$O((logn)^3)$ 和空间复杂性 $O(logn)$。</p>
-<p>量子计算机时至今日，仍然远未变得足够复杂来运行诸如Shor的算法，需要量子抗性算法的深入得研究</p>
-<h2 id="0x04-SageMath-工具"><a href="#0x04-SageMath-工具" class="headerlink" title="0x04 SageMath 工具"></a>0x04 SageMath 工具</h2><p>后来我从P4队的WP里看到了这个很牛逼的工具。里面的椭圆曲线求对数函数的速度非常快。我不太知道他用了什么方法，应该是改进的 rho 吧。</p>
-<p>下载地址<br><a href="http://www.sagemath.org/download.html" target="_blank" rel="noopener">http://www.sagemath.org/download.html</a></p>
-<p>实际上这是一个用python2.7写的数学计算库。椭圆曲线的东西用起来非常舒服</p>
-<p>大概的步骤如下所示，比我造的轮子好用多了。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sage: E =EllipticCurve(GF(<span class="number">10177</span>),[<span class="number">1</span>,<span class="number">-1</span>])</span><br><span class="line">sage: P = E([<span class="number">1</span>,<span class="number">1</span>])</span><br><span class="line">sage: Q = E([<span class="number">0x1a28</span>,<span class="number">0x8fb</span>])</span><br><span class="line">sage: P.discrete_log(Q)</span><br><span class="line"><span class="number">325</span></span><br><span class="line"><span class="comment"># 这算的速度，绝对是秒级别的</span></span><br></pre></td></tr></table></figure>
-
-
-<h2 id="0x05-ECC-VS-RSA"><a href="#0x05-ECC-VS-RSA" class="headerlink" title="0x05 ECC VS RSA"></a>0x05 ECC VS RSA</h2><p>首先抛弃一下量子计算，为什么ECC比RSA优秀呢？NIST给了个表，告诉我们实现相同的安全级别，所需要的RSA与ECC的比特数</p>
-<table>
-<thead>
-<tr>
-<th>RSA key size (bits)</th>
-<th>ECC key size (bits)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1024</td>
-<td>160</td>
-</tr>
-<tr>
-<td>2048</td>
-<td>224</td>
-</tr>
-<tr>
-<td>3072</td>
-<td>256</td>
-</tr>
-<tr>
-<td>7680</td>
-<td>384</td>
-</tr>
-<tr>
-<td>15360</td>
-<td>521</td>
-</tr>
-</tbody></table>
-<p>请注意，RSA密钥大小与ECC密钥大小之间没有线性关系（也就意味着：如果我们将RSA密钥大小加倍，并不需要将ECC密钥加倍）。该表不仅告诉我们ECC使用更少的内存，而且密钥生成和签名也要快得多。</p>
-<p>但为什么会这样呢？答案是，用于计算椭圆曲线上离散对数的更快算法是Pollard rho和BSGS，而在RSA的情况下，有着特殊的对抗算法，比如通用数字域筛，它用于整数因子分解的算法(yafu就是用的这个)。一般数字域筛是迄今为止最快的整数分解算法。该算法正对所有适用于基于模运算的其他密码系统，包括DSA，DH和ElGamal。</p>
-<h2 id="0x06-CTF题目实战"><a href="#0x06-CTF题目实战" class="headerlink" title="0x06 CTF题目实战"></a>0x06 CTF题目实战</h2><h3 id="XUSTCTF-2016"><a href="#XUSTCTF-2016" class="headerlink" title="XUSTCTF 2016"></a>XUSTCTF 2016</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">已知椭圆曲线加密Ep(a,b)参数为</span><br><span class="line"></span><br><span class="line">p = <span class="number">15424654874903</span></span><br><span class="line">a = <span class="number">16546484</span></span><br><span class="line">b = <span class="number">4548674875</span></span><br><span class="line">G(<span class="number">6478678675</span>,<span class="number">5636379357093</span>)</span><br><span class="line"></span><br><span class="line">私钥为</span><br><span class="line">k = <span class="number">546768</span></span><br><span class="line">求公钥K(x,y)</span><br><span class="line">提示：K=kG</span><br><span class="line">提交格式XUSTCTF&#123;x+y&#125;(注意，大括号里面是x和y加起来求和，不是用加号连接)</span><br></pre></td></tr></table></figure>
-
-<p>算是一个非常常规的题目了。直接用自己写的轮子就可出了</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> curve_base_class <span class="keyword">import</span> EllipticCurve</span><br><span class="line">E = EllipticCurve(p=<span class="number">15424654874903</span>, a=<span class="number">16546484</span>, b=<span class="number">4548674875</span>)</span><br><span class="line">K = E.get_scalar_multiplication(<span class="number">546768</span>,(<span class="number">6478678675</span>,<span class="number">5636379357093</span>))</span><br><span class="line">print(<span class="string">"XUSTCTF&#123;%s&#125;"</span>%(K[<span class="number">0</span>]+K[<span class="number">1</span>]))</span><br></pre></td></tr></table></figure>
-<h3 id="HXP-2018-Curve12833227"><a href="#HXP-2018-Curve12833227" class="headerlink" title="HXP 2018 Curve12833227"></a>HXP 2018 Curve12833227</h3><blockquote>
-<p>WP:<a href="https://github.com/p4-team/ctf/blob/master/2018-12-08-hxp/crypto_curve12833227/vuln.py" target="_blank" rel="noopener">https://github.com/p4-team/ctf/blob/master/2018-12-08-hxp/crypto_curve12833227/vuln.py</a></p>
-</blockquote>
-<p>关键代码如下，省略了mul和add两个函数。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randrange</span><br><span class="line"><span class="keyword">from</span> Crypto.Cipher <span class="keyword">import</span> AES</span><br><span class="line"></span><br><span class="line">p = <span class="number">2</span>**<span class="number">128</span> - <span class="number">33227</span></span><br><span class="line"></span><br><span class="line">i = <span class="keyword">lambda</span> x: pow(x, p<span class="number">-2</span>, p)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">x = randrange(p)</span><br><span class="line">aes = AES.new(x.to_bytes(<span class="number">16</span>, <span class="string">'big'</span>), AES.MODE_CBC, bytes(<span class="number">16</span>))</span><br><span class="line">flag = open(<span class="string">'flag.txt'</span>).read().strip()</span><br><span class="line">cipher = aes.encrypt(flag.ljust((len(flag)+<span class="number">15</span>)//<span class="number">16</span>*<span class="number">16</span>).encode())</span><br><span class="line">print(*mul(x, (<span class="number">4</span>, <span class="number">10</span>)), cipher.hex(), file=open(<span class="string">'flag.enc'</span>, <span class="string">'w'</span>))</span><br></pre></td></tr></table></figure>
-<h3 id="Securinets-CTF-Quals-2018-Improve-the-quality"><a href="#Securinets-CTF-Quals-2018-Improve-the-quality" class="headerlink" title="Securinets CTF Quals 2018    Improve the quality"></a>Securinets CTF Quals 2018    Improve the quality</h3><p>这个题目一开始给了个很长很长的描述。简单概括一下就是</p>
-<ul>
-<li>已知曲线 $ y^2 = x^3 + A*x + B$</li>
-<li>已知 A = 658974</li>
-<li>不知道 B 但是它最重要的数字是6</li>
-<li>p = 962280654317 </li>
-<li>生成元 P = (518459267012, 339109212996)</li>
-<li>私钥位 k。将k 切成若干份</li>
-<li>Qi = ki * P</li>
-<li>以及一大堆的$Q_i$</li>
-</ul>
-<p>首先先把B算出来</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B = (P[<span class="number">0</span>] ** <span class="number">3</span> + A * P[<span class="number">0</span>] - P[<span class="number">1</span>] ** <span class="number">2</span>) % p</span><br><span class="line">print(B)</span><br></pre></td></tr></table></figure>
-<p>这样算B会很大，加法逆元一下，得到B=618 满足条件。</p>
-<p>这里需要用到之前介绍的sagamath工具。把Q中的点遍历一遍，就可以很快求出结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">K.&lt;z&gt; = GF(prime)</span><br><span class="line">E = EllipticCurve(K,[A,B])</span><br><span class="line">P = E([x,y]) </span><br><span class="line"></span><br><span class="line">solutions = []</span><br><span class="line"><span class="keyword">for</span> px,py <span class="keyword">in</span> data:</span><br><span class="line">    Q = E([px,py])</span><br><span class="line">    solution = P.discrete_log(Q)</span><br><span class="line">    solutions.append(solution)</span><br><span class="line">print(solutions)</span><br></pre></td></tr></table></figure>
-<p>之后把数字转chr即可获得一段提示，根据提示找到一张图片，解隐写可得FLAG。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> solutions:</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">10</span>, <span class="number">2</span>):</span><br><span class="line">        print(chr(int(str(i)[j:j + <span class="number">2</span>])), end=<span class="string">""</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="ASIS-Final-2016-RACES"><a href="#ASIS-Final-2016-RACES" class="headerlink" title="ASIS Final 2016 RACES"></a>ASIS Final 2016 RACES</h3><p>这个加密算法，看上去没有什么大问题，这么多密钥参数，很容易让人想到是共模攻击。<br>突破点在于其素数生成函数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">prime &#x3D; getPrime(nbit)</span><br><span class="line">if prime % 3 &#x3D;&#x3D; 2:</span><br><span class="line">    return prime</span><br></pre></td></tr></table></figure>
-<p>这也就意味着，这里面所有的素数都是被3模余2的。我们知道素数只有$6k+5$和$6k+1$的形式（这是个伪命题），这也就意味着该脚本中的素数都是$6k+5$的形式。</p>
-<p>在公钥文件里面，包含了非常多的(n, e)，其n来自于利用该方法生成的两个素数之积。对于这种题目的一般做法是查看两个公钥是否有相同的参数，这个题目也不例外。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> pair <span class="keyword">in</span> tqdm.tqdm(itertools.combinations(pairs, <span class="number">2</span>)):</span><br><span class="line">    <span class="keyword">if</span> gmpy2.gcd(gmpy2.mpz(pair[<span class="number">0</span>][<span class="number">0</span>]), gmpy2.mpz(pair[<span class="number">1</span>][<span class="number">0</span>])) != <span class="number">1</span>:</span><br><span class="line">        print(pair)</span><br></pre></td></tr></table></figure>
-
-<p>这样，就能够找到p,q的值，并且迅速定位到c的值。</p>
-<p>脚本中的加密过程非常简单，只不过是加了个ECC的壳子而已<br>∵$d = e^{-1} ;mod ;lcm$<br>∴$C = eM \Longrightarrow M = dC$</p>
-<p>所以只需要求出e的逆元就可以了。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">lcm = gmpy2.lcm((p + <span class="number">1</span>), (q + <span class="number">1</span>))</span><br><span class="line">d = gmpy2.invert(e, lcm)</span><br><span class="line"></span><br><span class="line">p0, p1 = multiply(c, d, <span class="number">0</span>, n)</span><br><span class="line">print(hex(p1 - p0))</span><br><span class="line"><span class="comment"># ASIS&#123;58cf105e8993ff852a7ea69c3f6464458a87c69f89ef3dfd749da4e2d3982de34832e38cab1baf8d1cd3ce0f73251629&#125;</span></span><br></pre></td></tr></table></figure>
-<p>最终一波解密可以得到FLAG。</p>
-<h3 id="TUM-CTF-2016-Heicss"><a href="#TUM-CTF-2016-Heicss" class="headerlink" title="TUM CTF 2016 Heicss"></a>TUM CTF 2016 Heicss</h3><blockquote>
-<p>我改编了一些东西<br>虽然归属了椭圆曲线的tag。但是只是涉及了一些基本的操作<br>首先那个order有点脑洞。我自己爆爆了半个小时也没有个所以然来，所以直接给正确的order了。感觉当初官方应该给了个hint，说实际的order和脚本的order差了在末尾的若干个空格，正确的order就是原本脚本里的order加四个空格</p>
-</blockquote>
-<p>主要代码如下</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Give me the flag. This <span class="keyword">is</span> an order!</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decode</span><span class="params">(bs)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> len(bs) &lt; <span class="number">0x40</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">    s, m = int(bs[:<span class="number">0x40</span>], <span class="number">16</span>), bs[<span class="number">0x40</span>:]</span><br><span class="line">    <span class="keyword">if</span> s &gt;= q:</span><br><span class="line">        print(<span class="string">'\x1b[31mbad signature\x1b[0m'</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">    S = s, sqrt(pow(s, <span class="number">3</span>, q) + a * s + b, q)</span><br><span class="line">    <span class="keyword">if</span> S[<span class="number">1</span>] <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        print(<span class="string">'\x1b[31mbad signature:\x1b[0m &#123;:#x&#125;'</span>.format(S[<span class="number">0</span>]))</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">    h = int(SHA256.new(m.encode()).hexdigest(), <span class="number">16</span>)</span><br><span class="line">    <span class="keyword">if</span> mul(q, a, b, e, S)[<span class="number">0</span>] == h:</span><br><span class="line">        <span class="keyword">return</span> m</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'\x1b[31mbad signature:\x1b[0m (&#123;:#x&#125;, &#123;:#x&#125;)'</span>.format(*S))</span><br></pre></td></tr></table></figure>
-
-<p>不难发现，输入的被拆为 前64和后64到最后的两个部分，第二部分通过了 SHA256 加密生成了 h。</p>
-<p>首先来跟踪前40位的部分</p>
-<ul>
-<li>再输入长度超过64位，并且签名错误的情况下</li>
-<li>如果 s &gt;= q 那么会打印bad signature</li>
-<li>如果 s &lt;  q 那么会打印bad signature 以及 前半部分还有后半部分经过一个函数变换后的值。</li>
-</ul>
-<p>就好像盲注一样，s已知可以通过二分<code>盲注</code>来爆破出q的值<br>这个不会非常困难。由于我没有环境部署这个题目，就暂且跳过了。爆出来的q是这样的</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q = <span class="number">0x247ce416cf31bae96a1c548ef57b012a645b8bff68d3979e26aa54fc49a2c297</span></span><br></pre></td></tr></table></figure>
-
-<p>随后，记 s 为 S 的横坐标，随后会计算S的纵坐标（我姑且这么解释），纵坐标就是以下方程的一个解<br>$$y ^ 2 \equiv x^3 + ax +b ; mod ; q $$</p>
-<p>当然，由于横坐标可以任意定。如果取0的话，那么y就变成了<br>$$ y^2 \equiv b; mod ; q $$<br>这个y是可以打印出来的</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; <span class="number">00000000000000000000000000000000000000000000000000000000000000001</span></span><br><span class="line">&gt;&gt; bad signature: (<span class="number">0x0</span>, <span class="number">0x18aae6ca595e2b030870f49d1aa143f4b46864eceab492f6f5a0f0efc9c90e51</span>)</span><br><span class="line"></span><br><span class="line">b = pow(<span class="number">0x18aae6ca595e2b030870f49d1aa143f4b46864eceab492f6f5a0f0efc9c90e51</span>, <span class="number">2</span>, q)</span><br></pre></td></tr></table></figure>
-
-<p>这样的话，就可以计算出b的值</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b = <span class="number">8575167449093451733644615491327478728087226005203626331099704278682109092640</span></span><br></pre></td></tr></table></figure>
-<p>如果尝试输入1，那么会使得y无法算出来，应该是 GCD == 1 了。</p>
-<p>那么，如果输入的横坐标是2的话，那么y就变成了<br>$$ y^2 \equiv (8 + 2a + b); mod ; q $$<br>这样的话，就可以计算出a的值</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; <span class="number">00000000000000000000000000000000000000000000000000000000000000021</span></span><br><span class="line">&gt;&gt; bad signature: (<span class="number">0x2</span>, <span class="number">0x20d599b9106e16f43d0c0a54e78517f5834bf15ef0206a5ce37080e4cad4f359</span>)</span><br><span class="line"></span><br><span class="line">a = (((pow(<span class="number">0x20d599b9106e16f43d0c0a54e78517f5834bf15ef0206a5ce37080e4cad4f359</span>, <span class="number">2</span>, q) - b - <span class="number">8</span>) % q) / <span class="number">2</span>) </span><br><span class="line"><span class="comment"># a = 5079713781418039671549386476218981709382212150018593601284925328028384622133</span></span><br></pre></td></tr></table></figure>
-<p>目前得出了椭圆曲线的几个参数，分别是$ a,b,p,$还有生成元$S$。</p>
-<ul>
-<li>S的横坐标是输入的x,纵坐标是将x带入曲线方程中得到的y</li>
-</ul>
-<p>那么就要来观察一下签名部分了。<br>已知签名的内容来自于输入的字符串从第64位开始到最后，采用了 SHA256的加密得到 $h$</p>
-<p>如果 $(e S )x =  h$ 那么会返回m。我们需要的是让m为order，也就是最顶上的那个字符串。</p>
-<p>很显然，只有S是可控的。并且h是已知的，为了方便，我们需要让两个坐标点相等，而不是傻乎乎得去把S的横坐标取出来和h比较。（这也是为啥我说官方应该给了hint，wp里说最后的msg应该加上四个空格，我看了好久都没看懂…）非常巧合的是可以利用模的逆元来算出S<br>$$ S = e^{-1}*h$$</p>
-<p>如果要算e的逆元，那么就需要知道椭圆曲线的阶是多少。令我非常费解的是，椭圆曲线循环子群的阶是如何算出来的。这个数字太大了导致我用schoof算法直接内存爆了。<br>这边非常无奈的抄一下答案</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">feild_order = <span class="number">16503925798136106726026894143294039201930439456987742756395524593191976084900</span></span><br></pre></td></tr></table></figure>
-<p>于是，一串小脚本就可以算出 S 了。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">e = <span class="number">65537</span></span><br><span class="line">hx = int(SHA256.new(msg.encode()).hexdigest(), <span class="number">16</span>)</span><br><span class="line">hy = sqrt(pow(hx, <span class="number">3</span>, q) + a * hx + b, q)</span><br><span class="line">e_inv = gmpy2.invert(e, field_order)</span><br><span class="line">S = mul(q, a, b, e_inv, (hx, hy))</span><br><span class="line">check = mul(q, a, b, e, S)</span><br><span class="line"><span class="keyword">assert</span> check[<span class="number">0</span>] == hx</span><br></pre></td></tr></table></figure>
-<p>取出横坐标，非常巧合得发现其横坐标刚好64位也不用补0啥得。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"10feab68fea4ecbc95e2f7c67ebcf83e75fc0e0357006ca2429559f4aa83fce8"</span>.__len__()</span><br><span class="line">Out[<span class="number">11</span>]: <span class="number">64</span></span><br></pre></td></tr></table></figure>
-<p>把它和最前面那段加起来，即可得到结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">10</span>feab68fea4ecbc95e2f7c67ebcf83e75fc0e0357006ca2429559f4aa83fce8Give me the flag. This <span class="keyword">is</span> an order!    </span><br><span class="line">happy shaobaobaoer</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%AE%89%E5%85%A8%E6%80%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%AE%9E%E6%88%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ECC 椭圆曲线加密算法学习————ECDH与ECDSA" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94ECDH%E4%B8%8EECDSA/">ECC 椭圆曲线加密算法学习————ECDH与ECDSA</a>
-    </h1>
   
 
-        
-        <a href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94ECDH%E4%B8%8EECDSA/" class="archive-article-date">
-  	<time datetime="2020-05-21T19:14:44.941Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ECC-椭圆曲线加密算法学习————ECDH与ECDSA"><a href="#ECC-椭圆曲线加密算法学习————ECDH与ECDSA" class="headerlink" title="ECC 椭圆曲线加密算法学习————ECDH与ECDSA"></a>ECC 椭圆曲线加密算法学习————ECDH与ECDSA</h1><p>标签（空格分隔）： ecc Crypto</p>
-<hr>
-<blockquote>
-<p> *<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong><br>    &gt; File Name: ECC 椭圆曲线加密算法学习————ECDH与ECDSA<br>    &gt; Author: shaobaobaoer<br>    &gt; Mail: <a href="mailto:shaobaobaoer@126.com">shaobaobaoer@126.com</a><br>    &gt; WebSite: shaobaobaoer.cn<br>    &gt; Time: Sunday, 25. March 2019 22:42PM<br> *<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
-</blockquote>
-<p><font color='green'>&lt;!–查看注释有惊喜–&gt;</font></p>
-<h2 id="0x00-前言"><a href="#0x00-前言" class="headerlink" title="0x00 前言"></a>0x00 前言</h2><p>之前学习了实数域上的椭圆曲线与有限域$\mathbb {F}_{p}$上的椭圆曲线。详细可以参考<a href="http://shaobaobaoer.cn/archives/ecc-learning-elliptic-curve-from-real-to-finite-field" target="_blank" rel="noopener">ECC椭圆加密算法学习————从实数域到有限域的椭圆曲线</a>。</p>
-<p>不难发现，在实数域的标量乘法看上去是一个“简单”的问题，但是在有限域$\mathbb {F}_{p}$就显得非常困难。本文主要讨论如何将之前所学的运用于加密问题中。</p>
-<h3 id="相关代码"><a href="#相关代码" class="headerlink" title="相关代码"></a>相关代码</h3><ul>
-<li>本文的完整代码<ul>
-<li><a href="https://github.com/ninthDevilHAUNSTER/ecc_learning" target="_blank" rel="noopener">https://github.com/ninthDevilHAUNSTER/ecc_learning</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="一些重要的域参数"><a href="#一些重要的域参数" class="headerlink" title="一些重要的域参数"></a>一些重要的域参数</h3><ul>
-<li>素数 $p$ </li>
-<li>椭圆曲线系数 $a$ 与 $b$</li>
-<li>基点（生成元） $G$</li>
-<li>子群的阶$n$</li>
-<li>辅因子$h$</li>
-</ul>
-<p>之后，将这六个域参数组合成一个一个六元组$(p,a,b,G,n,h)$</p>
-<p>在后文中会经常用到</p>
-<h3 id="本文代码"><a href="#本文代码" class="headerlink" title="本文代码"></a>本文代码</h3><h2 id="0x01-椭圆曲线加密算法"><a href="#0x01-椭圆曲线加密算法" class="headerlink" title="0x01 椭圆曲线加密算法"></a>0x01 椭圆曲线加密算法</h2><p>尽管之前花了很长时间的铺垫，但是椭圆曲线的密码学策略，简单而纯粹</p>
-<p>在选取完毕一个六元组后，定义如下内容</p>
-<ul>
-<li>私钥： 一个随机的整数$d$，选取自${1,…,n-1}$</li>
-<li>公钥：$H = dG$  （$G$是循环子群的生成元）</li>
-</ul>
-<p>至此，来考虑一个问题<br>如果我们知道 $d$与六元组，那么很简单就可以算出$H$了。但是，如果我们只知道$H$和$G$，去寻找一个$d$是非常困难的，因为这需要解决离散对数问题。</p>
-<p>通过这一组密钥，可以衍生出两种经典的椭圆曲线加密算法，分别是 ECDH，可以用来加密。以及 ECDSA ，可以用来数字签名</p>
-<h2 id="0x02-ECDH-加密算法"><a href="#0x02-ECDH-加密算法" class="headerlink" title="0x02 ECDH 加密算法"></a>0x02 ECDH 加密算法</h2><p>ECDH是<a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange" target="_blank" rel="noopener">Diffie—Hellman算法</a>的衍生。关于DH算法这里不展开，如果能学到这里想必对DSA与DH都有一定程度的了解。</p>
-<h3 id="2-1-ECDH-的工作过程"><a href="#2-1-ECDH-的工作过程" class="headerlink" title="2.1 ECDH 的工作过程"></a>2.1 ECDH 的工作过程</h3><p>ECDH的工作原理如下所示，实际上和纯粹的DH算法有着非常相似的地方</p>
-<ul>
-<li>Alice 和 Bob 首先约定一个六元组，生成自己的私钥和公钥。定义数据结构如下<ul>
-<li>Alice Private Key : $d_A$</li>
-<li>Alice Public Key : $H_A = d_AG$</li>
-<li>Bob Private Key : $d_B$</li>
-<li>Bob Public Key : $H_B = d_BG$</li>
-</ul>
-</li>
-<li>Alice 和 Bob 公开得交换公钥。第三方可以窃听到 公钥$H_A$和$H_B$，但是他无法解出$d_A$和$d_B$</li>
-<li>Alice 用自己的私钥计算 $S_A = d_A H_B$；Bob 用自己的私钥计算 $S_B = d_B H_A$</li>
-</ul>
-<p>很显然 $S_A = S_B$ 因为以下算式</p>
-<p>$$S = d_AH_B = d_A(d_B G) = d_B(d_A G)$$</p>
-<p>对此，可以将上述过程总结为一个数学问题。</p>
-<blockquote>
-<p><big>给定三个点 P,aP,bP,那么abP的结果是什么？</big></p>
-</blockquote>
-<p>总之，ECDH的问题也被归结为非常困难的那一类。尽管无法证明有多困难，但是这个难度应该和在上一篇文章最后提及的椭圆曲线难题的难度相当。</p>
-<ul>
-<li>此时，Alice和Bob已经获得了共享密钥，可以通过对称加密来交换数据</li>
-</ul>
-<p>比如说，他们可以使用S的x坐标密钥，使用AES或者3DES加密消息。<br>实际上在TLS的过程中中，TLS将x坐标与其他相关的数字关联起来，从而计算得到字节型字符串的散列。</p>
-<h3 id="2-2-ECDH-加密解密实践"><a href="#2-2-ECDH-加密解密实践" class="headerlink" title="2.2 ECDH 加密解密实践"></a>2.2 ECDH 加密解密实践</h3><p>之前为了解释算法的过程，所以采用了非常简单的椭圆曲线。实际上，运用在实际中的曲线非常复杂。有一个组织叫高效密码学标准协会SECG。制定了一系列的高强度的密码学标准。可以在<a href="http://www.secg.org/sec2-v2.pdf" target="_blank" rel="noopener">相关文档</a>中查到高强度的密码学参数。</p>
-<p>在此，选取了<code>Secp256k1</code>作为之后演示的例子。同时<code>secp256k1</code>也是<a href="https://en.bitcoin.it/wiki/Secp256k1" target="_blank" rel="noopener">比特币公钥加密中的椭圆曲线参数</a>。<br>其六元组的构成如下所示:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p  = <span class="number">0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f</span></span><br><span class="line">a = <span class="number">0</span></span><br><span class="line">b = <span class="number">7</span></span><br><span class="line">xG = <span class="number">0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798</span></span><br><span class="line">yG = <span class="number">0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8</span></span><br><span class="line">n = <span class="number">0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141</span></span><br><span class="line">h = <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p>通过一个简单的脚本，可以还原上述过程，如果一切顺利，S_A 与 S_B 无论如何都是相等的</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Curve: secp256k1</span><br><span class="line">Alice<span class="string">'s private key: 103578888203905683147310628925141324706004210586941582062255108435073330635559</span></span><br><span class="line"><span class="string">Alice'</span>s public key: (<span class="number">72205313168121137722470139642970359323314163425341806818266474706052417395420</span>, <span class="number">42908651374588414209406038144703625728727324613824233811609705542553632995837</span>)</span><br><span class="line">Bo<span class="string">b's private key: 97727733532815547475289836254065376178409286030674739848985976984975775000167</span></span><br><span class="line"><span class="string">Bob'</span>s public key: (<span class="number">5226211608039988834249916327528388136314009566006478722042576040985411258297</span>, <span class="number">76867928087387169315809382707245048142671884194759753857442364958995784506075</span>)</span><br><span class="line">Shared secret calculate by Alice : (<span class="number">90402392865121638378190357760493775057772079441731676814490847255017097141119</span>, <span class="number">29964306249717728516272468678674342055122755840848542530168745390980111134510</span>)</span><br><span class="line">Shared secret calculate by Bob : (<span class="number">90402392865121638378190357760493775057772079441731676814490847255017097141119</span>, <span class="number">29964306249717728516272468678674342055122755840848542530168745390980111134510</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-临时-Ephermeral-ECDH"><a href="#2-3-临时-Ephermeral-ECDH" class="headerlink" title="2.3 临时(Ephermeral) ECDH"></a>2.3 临时(Ephermeral) ECDH</h3><p>ECDHE 也是一种常见的ECDH算法。其中的E表示短暂的。指交换的密钥是临时的，而不是静态的。在TLS中使用ECDHE。那么客户端和服务端在建立连接时即时生成其公钥私钥对，然后使用TLS证书对密钥进行签名，然后在各方之间交换</p>
-<h2 id="0x03-ECDSA-加密算法"><a href="#0x03-ECDSA-加密算法" class="headerlink" title="0x03 ECDSA 加密算法"></a>0x03 ECDSA 加密算法</h2><p>ECDSA 的使用场景如下：<br>Alice想要用她的私钥$d_A$对一个消息进行签名。Bob希望通过Alice的公钥$H_A$来验证对消息的签名。但是只有Alice能够签名，其他人只能验证她的签名。</p>
-<p>同样Alice和Bob使用相同的六元组域参数。所谓ECDSA是应用于椭圆曲线的DSA数字签名算法的变体。<br>关于DSA的具体细节，可以看看<a href="http://shaobaobaoer.cn/archives/567/dsa%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8Epython%E5%AE%9E%E7%8E%B0" target="_blank" rel="noopener">我之前写的文章</a>（PS: 代码有些问题，当初连模逆运算都不是很懂）</p>
-<p>ECDSA处理的是消息的哈希值，而不是消息本身，散列函数选择取决于双方，但是应当选用<a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener">安全的散列函数</a>。在此，我们定义消息的散列值为$z$<!--散列值会被截断，截断的位长度与n的位程度相同。截断的散列是一个整数，表示为$z$。--></p>
-<h3 id="3-1-ECDSA-的签名过程"><a href="#3-1-ECDSA-的签名过程" class="headerlink" title="3.1 ECDSA 的签名过程"></a>3.1 ECDSA 的签名过程</h3><p>ECDSA 的流程如下所示：</p>
-<p>预定完毕一个六元组后，Alice首先定义公钥和私钥</p>
-<ul>
-<li>私钥： 一个随机的整数$d_A$，选取自${1,…,n-1}$</li>
-<li>公钥: $H_A = d_AG$  （$G$是循环子群的生成元）</li>
-</ul>
-<p>随后，Alice 定义如下内容</p>
-<ul>
-<li>选取一个随机的整数$k$，选取自${1,…,n-1}$</li>
-<li>计算 $P = kG$  （$G$是循环子群的生成元）</li>
-<li>计算 $r \equiv x_p ;(mod ;n );$ ($x_p$ 是P的横坐标)</li>
-<li>如果 $r = 0 $ 则重新选取k</li>
-<li>计算 $s \equiv k^{-1} ( z + rd_A); (mod;n)$ ($d_A$是Alice的私钥，$k^{-1}$是$k$的逆元)</li>
-<li>如果 $s = 0 $ 则重新选取k</li>
-<li>将 $(r,s)$ 封装为一个签名</li>
-</ul>
-<p>简单来说，该算法生成了一个密钥k。该密钥通过标量积隐藏在签名的$r$中。之前也说过，通过$P$和$G$计算$k$，是有限域椭圆曲线的数学难题。<br>随后$r$通过算式 $s \equiv k^{-1} ( z + rd_A); (mod;n)$与消息散列$z$建立起联系。并将$r$和$s$封装为签名。</p>
-<p>为了计算$s$，需要知道$k$的对于$n$的逆元。在之前说到过，如果$n$是个合数，那么在计算模逆的时候会出些一些非常棘手的状况。<strong>所以如果私钥不是素数，那么ECDSA就不能够被使用。</strong><!--If a subgroup has a non-prime order, ECDSA can't be used.不是很懂什么叫做 non-prime order-->当然，在制定高强度密码学标准的时候，自然是考虑到了这种情况</p>
-<h3 id="3-2-ESDSA-的验证过程"><a href="#3-2-ESDSA-的验证过程" class="headerlink" title="3.2 ESDSA 的验证过程"></a>3.2 ESDSA 的验证过程</h3><p>对于Bob而言，他知道$z$和$(r,s)$，可以这样来验证签名</p>
-<ul>
-<li>计算 $u_1 \equiv s^{-1} z ;(mod ;n)$</li>
-<li>计算 $u_2 \equiv s^{-1} r ;(mod ;n)$</li>
-<li>计算 $P_0 = u_1G + u_2H_A$</li>
-<li>当且仅当 $ r=xP;mod;n $的时候 $P_0 = H_A$</li>
-</ul>
-<h3 id="3-3-ESDSA-的正确性验证"><a href="#3-3-ESDSA-的正确性验证" class="headerlink" title="3.3 ESDSA 的正确性验证"></a>3.3 ESDSA 的正确性验证</h3><p>首先从最后一步开始：（严谨而言下面每个式子都需要模n）<br>$$<br>\begin{eqnarray}<br>P =&amp;   u_1G + u_2H_A \<br>=&amp; u_1G + u_2d_AG\<br>=&amp; (;u_1 + u_2d_A; ); G<br>\end{eqnarray}<br>$$</p>
-<p>之后回带 $u_1$,$u_2$<br>$$<br>\begin{eqnarray}<br>P =&amp; (;u_1 + u_2d_A; ); G \<br>=&amp; (;s^{-1} z  +  s^{-1} rd_A;) ;G\<br>=&amp; s^{-1}(;z + rd_A;); G<br>\end{eqnarray}<br>$$</p>
-<p>∵ $s = k^{-1}(;z + rd_A;); mod ; n  $<br>∴ $ k = s^{-1}(;z + rd_A;); mod ; n$<br>因此的得证 $ P = kG$</p>
-<p>综上所述，可以将ECDSA的过程用下图来概括</p>
-<p><img src="http://static.zybuluo.com/shaobaobaoer/8toy2hk4akcq4rk1ydklx75n/image_1d6nq8u9u1vd1lro1aqn10bh1ugug.png" alt="image_1d6nq8u9u1vd1lro1aqn10bh1ugug.png-19.8kB"></p>
-<h3 id="3-4-ESDSA-签名与验证演示"><a href="#3-4-ESDSA-签名与验证演示" class="headerlink" title="3.4 ESDSA 签名与验证演示"></a>3.4 ESDSA 签名与验证演示</h3><p>我写了一个ESDSA签名与验证的脚本，其输出内容如下所示。详细代码可以再github里查看</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Curve: secp256k1</span><br><span class="line">Private key: <span class="number">104402155858234843462820049838931863424340700345639408070129091750274190501639</span></span><br><span class="line">Public key: (<span class="number">26871662523956236501334015334554552355718345422423650192015494443518483271191</span>, <span class="number">78585437455917839772708635641693122787004414694759872862060571807949572029114</span>)</span><br><span class="line"></span><br><span class="line">Message: <span class="number">79600447942433</span></span><br><span class="line">Signature: (<span class="number">90544279873496095960562757005038315753760612769739282803554290388042828042546</span>, mpz(<span class="number">81447758399901905504654585382621756821500911503165874513424939904998314198491</span>))</span><br><span class="line">Verification: signature matches</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-5-ESDSA-简单攻击演示"><a href="#3-5-ESDSA-简单攻击演示" class="headerlink" title="3.5 ESDSA 简单攻击演示"></a>3.5 ESDSA 简单攻击演示</h3><p>生成ECDSA签名时，保守秘密非常重要 ķ真的很秘密。如果我们使用相同的ķ来签名，或者如果随机数生成器可预测，<strong>攻击者就能找到私钥</strong></p>
-<p>如果使用相同的k进行签名，将会发生一些有趣的事情。也是<a href="https://www.bbc.com/news/technology-12116051" target="_blank" rel="noopener">索尼在11年前犯的错误</a></p>
-<p>在计算开始之前，首先我们应当知道域参数的六元组（或者曲线名称），两组签名 $(r_1,s_1),(r_2,s_2)$与哈希值$z1$,$z2$。以及公钥 $S_A$</p>
-<p>对于相同的k生成的两组签名 $(r_1,s_1),(r_2,s_2)$而言。</p>
-<ul>
-<li>最先确定的是$r1=r2$</li>
-<li>两式相减可得 $$s_1 - s_2 \equiv k^{-1} \times (z_1 -z_2) ; mod ;n$$</li>
-<li>两边同乘k后将k的系数除过去 可得 $$k   \equiv (s_1 - s_2)^{-1} \times (z_1 -z_2) ; mod ;n$$</li>
-<li>此时，就可以计算出$k$，再利用 $k$ 可以计算出私钥$d_A$<br>$$s \equiv k^{-1} (z _ rd_A) ; mod ; n \Longrightarrow d_A \equiv  r{-1} (sk -z ) ; mod ; n$$</li>
-</ul>
-<!--实际上，和DH本质算式对比，可以发现相同之处；DH最后密钥认证阶段满足的等式是-->
-
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/ECC%20%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E2%80%94%E2%80%94ECDH%E4%B8%8EECDSA/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/test/">test</a>
-    </h1>
   
 
-        
-        <a href="/2020/05/22/test/" class="archive-article-date">
-  	<time datetime="2020-05-21T19:03:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/test/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/hello-world/" class="archive-article-date">
-  	<time datetime="2020-05-21T18:35:04.043Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -978,8 +511,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
